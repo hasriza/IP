@@ -1,0 +1,227 @@
+/*To not write the hexcodes repeatedly, declare them in the root element and use them as var(--color_name)*/
+/*General style*/
+:root{
+	--yellow:#ffc600;
+}
+
+*{
+	margin:0;
+	border:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color:white;
+	font-family: 'Tahoma', Helvetica, sans-serif;
+	font-size:25px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+header{
+	width:100%;
+	padding-bottom:20px;
+	top:0;
+}
+
+/*Header Footer Template*/
+
+.head{
+	width:100%;
+	padding:5px;	
+	height:3.8em;
+	background-color: #98fb98;	
+	border-bottom: 3px solid #177c72;
+	box-sizing:border-box;
+	position:fixed;
+}
+
+.head img{
+	width:110px;
+	float:left;
+}
+
+.head h1{
+	padding:10px;
+	font-family:times new roman;
+	font-size: 50px;
+	color:#545454;
+	font-weight: bold;
+}
+
+#free{
+	font-style: italic;
+}
+
+/*Navigation Style*/
+
+.mainnav{
+	margin-top:3.8em;
+	background-color: green;
+	opacity:0.8;
+	width:100%;
+	position:fixed; 
+	/*height:3em;*/
+	border-bottom:3px solid red;
+	z-index:100;
+}
+
+.mainnav li{
+	border:0.1px solid lightgray;
+	border-radius:10px;
+	text-transform: uppercase;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	margin-left:2em;
+	padding:0.35em;
+	list-style: none;
+	/* float:left;*/
+	text-align:center;
+	display: inline-block;
+}
+
+.mainnav a{
+	color:white;
+	text-decoration: none;
+}
+
+.mainnav li:hover{
+	background-color:lightgray;
+}
+
+.container{
+	margin-top: 7.2em;
+}
+
+.drop{	
+	position: absolute;
+	background-color: rgba(0,0,0,0.7);
+	margin-top: 0.33em; 
+	display:none;
+}
+
+.dropdown:hover .drop{
+	display:block;
+}
+
+/*footer */
+
+.foot{	
+	/*margin-top:14em;*/
+	border-top:2px solid #777777;
+	box-sizing:border-box;	
+	padding-top:40px;
+	color:#7c7c7c;
+	font-size:18px;
+}
+
+.foot img{
+	width:100px;
+	height:80px;
+	float:left;
+}
+
+.foot li{
+	float:left;
+	padding-top:30px;
+	padding-left:200px;
+	padding-right:40px;
+	list-style:none;
+}
+
+.foot a{
+	color:#7c7c7c;
+}
+
+.foot a:hover{
+	color:green;
+}
+
+/*POSITIONS*/
+
+/*Story*/
+
+#story{
+	margin-top:6em;
+	display:grid;
+	height:1800px;	
+	grid-gap:1em;
+	grid-template-columns: 1fr 7fr 1fr;
+	grid-template-rows: repeat(7 ,2fr);
+	grid-auto-rows: repeat(7, 2fr);
+	grid-auto-columns: 1fr;
+}
+
+#strimg{
+	/*grid-column: 2;*/
+	grid-row: 1;
+}
+
+#strcontent{
+	grid-row:2;
+}
+
+.content{
+	text-align:center;
+}
+
+/*What We Do*/
+
+#process img{
+	width:70%;
+	/*height:585px;*/
+}
+
+#whatwedo{
+	display: grid;
+	grid-template-rows: 1fr 7fr;
+	grid-template-columns: 1fr 8fr 1fr;
+	grid-gap:1em;
+}
+
+#shd{
+	grid-column: 2;
+	grid-row:1;
+}
+
+#process{
+	grid-column:2;
+	grid-row:2;
+}
+
+/*PICKUP*/
+
+/*.pickup img{
+	height:130px;
+	width:130px;
+}*/
+
+.pickup{
+	background-image: url("cimages/delivery_boy.jpg");
+	background-color:green;
+	padding :8px;
+	opacity:0.8;
+	color:white;
+	border: 5px solid black ;
+}
+
+.pickup:nth-child(even){
+	background-image: url("cimages/delivery_girl.jpg");
+}
+
+.pickup:nth-child(odd){
+	background-image: url("cimages/delivery_boy.jpg");
+}
+
+
+/* Pickup grid */
+.pickups{
+	padding-top:1em;
+	padding-left:4em;
+	padding-right:4em;
+	display:grid;
+	grid-gap:1em;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 0.7fr));
+	grid-auto-rows: 8em;
+}
