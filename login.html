@@ -1,18 +1,18 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Donor Login</title>
+		<title>Login</title>
 	</head>
 	<body>
 		<header>
 			<h1>Login</h1>
 		</header>
 
-		<form>
+		<form action="login.php", method="post", autocomplete="on">
 
 			<div>
 				<label>Username</label>
-				<input type="text" placeholder="Enter Username" name="uname">
+				<input type="text" placeholder="Enter Username" name="uname" autofocus="on">
 			</div>
 
 			<div>
@@ -27,7 +27,7 @@
 
 		</form>
 
-		<a href="register.html">Don't Have An Account Yet? Register</a>
+		<p>Don't Have An Account Yet?</p><a href="register.html">Register</a>
 
 	</body>
 </html>
