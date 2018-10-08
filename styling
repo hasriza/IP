@@ -1,0 +1,23 @@
+COLORS:
+Tiny Sweet Blue: #b5e9e9
+
+Creamy Light Tan: #fef6dd
+
+Pinkie Pie: #ffe1d0
+
+Yellow Horse: #fff1b5
+
+Green Thumb: #dcf3d0
+
+FONTS:
+Nav
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+font-family: 'Roboto Condensed', sans-serif;
+
+Head
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+font-family: 'Playfair Display', serif;
+
+Content
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet"
+font-family: 'Nanum Gothic', sans-serif;
