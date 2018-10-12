@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REGISTER</title>
+        <link rel="stylesheet" type="text/css" href="register1.css">
+    </head>
+    <body>
+        <div class="main-div" align="center">
+            <header>
+            <h1>REGISTER</h1>
+        </header>
+        <form action="register.php", method="POST">
+
+            <div>
+                <input type="text" placeholder="Enter Name" name="name" autofocus="on" autocomplete="on" required>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Enter Number" name="numb" autocomplete="on" required>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Enter Address" name="add" autocomplete="on">
+            </div>
+
+            <div>
+                <input type="email" placeholder="Enter Email" name="email" autocomplete="on">
+            </div>
+
+            <div>
+                <label id="label1">JOIN AS</label>
+                <select  name="join" id ="select1">
+                    <option value="donor">Donor</option>
+                    <option value="delivery">Delivery Personnel</option>
+                    <option value="company">Recycling Company</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="sponsor">Sponsor</option>
+                </select>
+            </div>
+
+            <div>
+                
+                <input type="text" placeholder="Enter Username" name="uname" autocomplete="on" required>
+            </div>
+
+            <div>
+                
+                <input type="Password" placeholder="Enter Password" name="pass" required>
+            </div>
+
+            <div>
+                
+                <input type="Password" placeholder="Confirm Password" name="cpass" required>
+            </div>
+             <div id="checkbox1">
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </div>
+
+            <div>
+                <button type="submit" class="sub">REGISTER</button>
+    
+            </div><br>
+        <br><br>
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            <div class="container signin">
+                <p>Already have an account? <a href="#">Sign in</a>.</p>
+            </div>
+        </form>
+</div>
+
+    </body>
+    </html>
