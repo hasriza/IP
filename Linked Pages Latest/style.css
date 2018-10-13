@@ -1,0 +1,493 @@
+/*To not write the hexcodes repeatedly, declare them in the root element and use them as var(--color_name)*/
+/*General style*/
+:root{
+	/*Header: #215732
+	Content Header: #6a6a6a
+	NavBar Background on Hover: #1e88e5
+	Link Color on Hover: #215732
+	Background: #f6fff4*/
+
+	/*Backgroun Colors*/
+	--header:#215732;
+	/*This has been used for anything that is written on the page, including the forms*/
+	--detail:#6a6a6a;
+	--navbar:#1e88e5;
+	--link:#215732;
+	--bg: #f6fff4;
+	/*Used in the transformation in the link*/
+	--highlight:#f8b195;
+	/*Header text*/
+	--htext: #f8b195;
+	/*Color of text elements and border of the navbar*/
+	--bnav:#f8b195;
+	--nvtext:#f6fff4;
+	/*footer text and border*/
+	--footer:#6a6a6a;
+	/*The color of all the subheadings and headings on all the pages*/
+	--headings:#6a6a6a;
+
+	--nav:'Roboto Condensed, sans-serif';
+	--head:'Playfair Display, serif';
+	--content:'Nanum Gothic, sans-serif';
+}
+
+*{
+	margin:0;
+	border:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color:var(--bg);	
+	font-family: var(--content);
+	font-size:25px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+header{
+	width:100%;
+	padding-bottom:20px;
+	top:0;
+}
+
+header a{
+	text-decoration: none;
+}
+/*Header Footer Template*/
+
+#head{
+	width:100%;
+	padding:5px;	
+	height:3.8em;
+	background-color: var(--header);	
+/*	border-bottom: 3px solid var(--orange);
+*/	box-sizing:border-box;
+	/*position:fixed;*/
+	font-family: var(--nav)
+}
+
+#head a{
+	text-decoration:none;
+}
+
+#head img{
+	width:110px;
+	float:left;
+}
+
+#head h1{
+	padding:10px;
+	font-family:times new roman;
+	font-size: 50px;
+	color:var(--htext);
+	font-weight: bold;
+}
+
+#free{
+	font-style: italic;
+	color:var(--bg);
+}
+
+/*Navigation Style*/
+
+#mainnav{
+	background-color: var(--navbar);
+	width:100%;
+	border-top:3px solid var(--bnav);
+	z-index:100;
+}
+
+#mainnav li{
+	border:0.1px solid lightgray;
+	border-radius:10px;
+	text-transform: uppercase;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	margin-left:2em;
+	padding:0.35em;
+	list-style: none;
+	text-align:center;
+	display: inline-block;
+	color:var(--nvtext);
+}
+
+#mainnav ul ul{
+	display:none;
+}
+
+
+/*#mainnav ul ul li{
+
+}*/
+
+#mainnav a{
+	color:var(--orange);
+	text-decoration: none;
+}
+
+#mainnav a{
+	opacity: 1;
+	position: relative;
+}
+
+/*mainnav scroll*/
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+/*Mainnav transformation(line below)*/
+#mainnav a::before {
+	content: '';
+	display: block;
+	height: 3px;
+	background: #f8b195;
+	position: absolute;
+	bottom:-.45em;
+	left: 0;
+	right: 0;
+	transform: scale(0,1);
+	transition: transform ease-in-out 500ms;
+}
+
+#mainnav a:hover::before{
+	transform: scale(1,1);
+}
+
+/*Contact*/
+.contact{
+	text-align:justify;
+	margin-left:10%;
+	margin-bottom:2%;
+	width:80%;
+}
+
+/*footer */
+
+.foot{	
+	/*margin-top:10em;*/
+	border-top:2px solid var(--footer);
+	box-sizing:border-box;	
+	padding-top:20px;
+	color:var(--footer);
+	font-size:18px;
+}
+
+.foot img{
+	margin-left:20px;
+	float:right;
+	width:80px;
+	height:50px;
+}
+
+.foot li{
+	float:right;
+	padding-left:20px;
+	list-style:none;
+}
+
+.foot a{
+	text-decoration: none;
+	color:#7c7c7c;
+}
+
+.foot a:hover{
+	color:var(--link);
+}
+
+/*Form CSS*/
+/* Full-width input fields */
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 11px;
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid #d4d4d4;
+    /*background: #f1f1f1;*/
+    font-family: 'Helvetica', serif;
+    font-size: 20px;
+    color:var(--detail);
+}
+
+ .select_join{
+    width: 90%;
+    margin-left:3px;
+    padding: 11px;
+    margin:7px;
+    display: inline-block;
+    border: none;
+    font-size:20px;
+    border: 1px solid #d4d4d4;
+    font-family: 'Helvetica', serif;
+    color:var(--detail);
+
+ }
+
+ .select_join option{
+    padding:2px;
+    font-family: 'Helvetica', serif;
+    font-size:20px;
+    color:#898585;
+
+ }
+
+ .label_join{
+    width: 90%;
+    padding: 13px;
+    margin: 5px;
+    display: inline-block;
+    border: none;
+    font-family: 'Helvetica', serif;
+ }
+ 
+.checkbox1{
+    display: inline;
+    border: none;
+    background: #f1f1f1;
+    font-family: 'Helvetica', sans-serif;	   
+ }
+#check{
+	 font-size: 20px;
+}
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+}
+
+/* Set a style for the submit button */
+.sub {
+    background-color: var(--header);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0px;
+    cursor: pointer;
+    width: 92%;
+    opacity: 0.9;
+    font-size:20px;
+}
+
+button:hover{
+    opacity: 1; 
+}
+
+form span{
+    color: black;
+    opacity: 0.9;
+    font-size: 20px;
+    /*text-align: center ;*/
+}
+
+fieldset{
+    padding:0.7em;
+    padding-left:1em;
+    border:1px solid var(--detail);
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+fieldset legend{
+	color:var(--detail);
+    text-align: center;
+    font-size: 20px;
+    padding:0px 12px;
+}
+
+header h2{
+	color:var(--detail);
+    padding-left:45%;
+}
+
+header h2 a{
+    text-decoration: none;    
+	color:var(--detail);
+    font-size:25px;
+}
+
+/*Form JavaScript CSS*/
+/*Close Button*/
+.close{
+    color:gray;
+    float:left;
+    font-size:40px;
+    font-weight: bold;
+}
+
+.close:hover , .close:focus{
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Background Window when modal pops up*/
+.container{
+    /*display:none;*/
+    z-index:1;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+.login{
+    padding:15px 25px;
+    font-size:20px;
+    border-radius: 6px;
+}
+
+.register{
+    margin-left:30%;
+    width:40%;
+    height:95%;
+    margin-top: 1%;
+/*    border-radius: 5px;
+*/  background-color:var(--bg);
+    padding:20px;
+    opacity:1;
+}
+
+#adjust_login{
+	height:50%;
+	margin-top:10%;
+}
+
+#adjust_login h2{
+	margin-left:0.1%;
+}
+
+/*Login button*/
+.login{
+	background-color: yellow;
+	margin-top:15px;
+	box-shadow: 4px;
+	padding:15px;
+	font-size: 18px;
+	position:fixed;
+	top:0%;
+	right:2%;
+	cursor: pointer;
+}
+.login a{
+	text-decoration: none;
+	color:white;
+	font-style: bold;
+}
+
+.login:hover{
+	background-color:orange;
+}
+
+/*Page - WhatWeDo*/
+#process img{
+	width:80%;
+	margin-left:10%;
+
+/*POSITIONS*/
+
+/*Story*/
+
+/*#story{
+	margin-top:6em;
+	display:grid;
+	height:1800px;	
+	grid-gap:1em;
+	grid-template-columns: 1fr 7fr 1fr;
+	grid-template-rows: repeat(7 ,2fr);
+	grid-auto-rows: repeat(7, 2fr);
+	grid-auto-columns: 1fr;
+}
+
+#strimg{
+	/*grid-column: 2;*/
+	/*grid-row: 1;*/
+}
+
+/*#strcontent{
+	grid-row:2;
+}
+
+.content{
+	text-align:center;
+}*/
+
+/*What We Do*/
+
+
+
+/*#whatwedo{
+	display: grid;
+	grid-template-rows: 1fr 7fr;
+	grid-template-columns: 1fr 8fr 1fr;
+	grid-gap:1em;
+}
+
+#shd{
+	grid-column: 2;
+	grid-row:1;
+}
+
+#process{
+	grid-column:2;
+	grid-row:2;
+}
+*/
+/*Container for all pages*/
+.outer{
+	.margin-top:2em;
+}
+
+.hd{
+	font-size:36px;
+	color:var(--headings);
+}
+
+/*Our Story*/
+.story img{
+	width:100%;
+}
+
+/*PICKUP*/
+
+/*.pickup img{
+	height:130px;
+	width:130px;
+}*/
+
+.pickup{
+	background-image: url("cimages/delivery_boy.jpg");
+	background-color:green;
+	padding :8px;
+	opacity:0.8;
+	color:white;
+	border: 5px solid black ;
+}
+
+.pickup:nth-child(even){
+	background-image: url("cimages/delivery_girl.jpg");
+}
+
+.pickup:nth-child(odd){
+	background-image: url("cimages/delivery_boy.jpg");
+}
+
+
+/* Pickup grid */
+.pickups{
+	padding-top:1em;
+	padding-left:4em;
+	padding-right:4em;
+	display:grid;
+	grid-gap:1em;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 0.7fr));
+	grid-auto-rows: 8em;
+}
+
+
+
+
