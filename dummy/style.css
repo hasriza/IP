@@ -1,8 +1,5 @@
 /*To not write the hexcodes repeatedly, declare them in the root element and use them as var(--color_name)*/
 /*General style*/
-<<<<<<< HEAD
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 :root{
 	/*Palette 1*/
 	--blue:#bfd8d2;
@@ -28,10 +25,6 @@
 	--nav:'Roboto Condensed, sans-serif';
 	--head:'Playfair Display, serif';
 	--content:'Nanum Gothic, sans-serif';
-=======
-:root{
-	--yellow:#ffc600;
->>>>>>> Example
 }
 
 *{
@@ -42,13 +35,8 @@
 }
 
 body{
-<<<<<<< HEAD
 	background-color:var(--peach);	
 	font-family: var(--content);
-=======
-	background-color:white;
-	font-family: 'Tahoma', Helvetica, sans-serif;
->>>>>>> Example
 	font-size:25px;
 	overflow-y:scroll;
 	overflow-x:hidden;
@@ -60,7 +48,6 @@ header{
 	top:0;
 }
 
-<<<<<<< HEAD
 
 /*Header Footer Template*/
 
@@ -80,38 +67,15 @@ header{
 }
 
 #head img{
-=======
-/*Header Footer Template*/
-
-.head{
-	width:100%;
-	padding:5px;	
-	height:3.8em;
-	background-color: #98fb98;	
-	border-bottom: 3px solid #177c72;
-	box-sizing:border-box;
-	position:fixed;
-}
-
-.head img{
->>>>>>> Example
 	width:110px;
 	float:left;
 }
 
-<<<<<<< HEAD
 #head h1{
 	padding:10px;
 	font-family:times new roman;
 	font-size: 50px;
 	color:var(--yellow);
-=======
-.head h1{
-	padding:10px;
-	font-family:times new roman;
-	font-size: 50px;
-	color:#545454;
->>>>>>> Example
 	font-weight: bold;
 }
 
@@ -121,7 +85,6 @@ header{
 
 /*Navigation Style*/
 
-<<<<<<< HEAD
 #mainnav{
 	background-color: var(--blue);
 	width:100%;
@@ -130,20 +93,6 @@ header{
 }
 
 #mainnav li{
-=======
-.mainnav{
-	margin-top:3.8em;
-	background-color: green;
-	opacity:0.8;
-	width:100%;
-	position:fixed; 
-	/*height:3em;*/
-	border-bottom:3px solid red;
-	z-index:100;
-}
-
-.mainnav li{
->>>>>>> Example
 	border:0.1px solid lightgray;
 	border-radius:10px;
 	text-transform: uppercase;
@@ -157,13 +106,13 @@ header{
 	display: inline-block;
 }
 
-<<<<<<< HEAD
 #mainnav ul ul{
 	display:none;
 }
 
 
 /*#mainnav ul ul li{
+
 }*/
 
 #mainnav a{
@@ -209,45 +158,11 @@ header{
 	border-top:2px solid #777777;
 	box-sizing:border-box;	
 	padding-top:20px;
-=======
-.mainnav a{
-	color:white;
-	text-decoration: none;
-}
-
-.mainnav li:hover{
-	background-color:lightgray;
-}
-
-.container{
-	margin-top: 7.2em;
-}
-
-.drop{	
-	position: absolute;
-	background-color: rgba(0,0,0,0.7);
-	margin-top: 0.33em; 
-	display:none;
-}
-
-.dropdown:hover .drop{
-	display:block;
-}
-
-/*footer */
-
-.foot{	
-	/*margin-top:14em;*/
-	border-top:2px solid #777777;
-	box-sizing:border-box;	
-	padding-top:40px;
->>>>>>> Example
 	color:#7c7c7c;
 	font-size:18px;
 }
 
 .foot img{
-<<<<<<< HEAD
 	margin-left:20px;
 	float:right;
 	width:80px;
@@ -257,26 +172,11 @@ header{
 .foot li{
 	float:right;
 	padding-left:20px;
-=======
-	width:100px;
-	height:80px;
-	float:left;
-}
-
-.foot li{
-	float:left;
-	padding-top:30px;
-	padding-left:200px;
-	padding-right:40px;
->>>>>>> Example
 	list-style:none;
 }
 
 .foot a{
-<<<<<<< HEAD
 	text-decoration: none;
-=======
->>>>>>> Example
 	color:#7c7c7c;
 }
 
@@ -284,128 +184,6 @@ header{
 	color:green;
 }
 
-<<<<<<< HEAD
-.foot body {
-    font-family: 'Lato', sans-serif;
-    color: #FFF;
-    background: #322f30;
-    -webkit-font-smoothing: antialiased;
-}
-
-.foot p > a:hover{
-    color: #d9d9d9;
-    text-decoration:  underline;
-}
-
-._12 {
-    font-size: 1.2em;
-}
-._14 {
-    font-size: 1.4em;
-}
-ul {
-    padding:0;
-    list-style: none;
-}
-.footer-social-icons {
-    width: 350px;
-    display:block;
-    margin: 0 auto;
-}
-.social-icon {
-    color: #fff;
-    margin: auto;
-    float: right; 
-}
-ul.social-icons {
-    margin-top: 10px;
-}
-.social-icons li {
-    vertical-align: top;
-    display: inline;
-    height: 100px;
-
-}
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
-}
-.fa-facebook {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-facebook:hover {
-    background-color: #3d5b99;
-}
-.fa-twitter {
-    padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-twitter:hover {
-    background-color: #00aced;
-}
-.fa-rss {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-rss:hover {
-    background-color: #eb8231;
-}
-.fa-youtube {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-
-}
-.fa-youtube:hover {
-    background-color: #e64a41;
-}
-.fa-linkedin {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-linkedin:hover {
-    background-color: #0073a4;
-}
-.fa-google-plus {
-    padding:10px 9px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-google-plus:hover {
-    background-color: #e25714;
-}
-
-=======
->>>>>>> Example
 /*POSITIONS*/
 
 /*Story*/
@@ -493,7 +271,6 @@ ul.social-icons {
 	grid-template-columns: repeat(auto-fit, minmax(300px, 0.7fr));
 	grid-auto-rows: 8em;
 }
-<<<<<<< HEAD
 
 /*#contact{
 	padding-top: 10em;
@@ -551,5 +328,3 @@ ul.social-icons {
 	text-decoration: none;
 	cursor: pointer;
 }
-=======
->>>>>>> Example
