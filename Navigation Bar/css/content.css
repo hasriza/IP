@@ -1,0 +1,53 @@
+a{
+	text-decoration: none;
+	color:green;
+}
+
+a:hover{
+	color:red;
+}
+
+.hd{
+	width:100%;
+	margin-bottom:10px;
+}
+
+.hd h1{
+	font-size: 50px;
+	text-align: center;
+	/*padding-left:375px;*/
+	/*font-weight: bold;*/
+	color:gray;
+}
+
+.hd h3{
+	padding-left:370px;
+	font-size:25px;
+}
+
+.container{
+	padding:10px;
+}
+
+.content{
+	text-align: justify;
+	padding:20px;
+	width:80%;
+}
+
+
+.content h2{
+	padding-bottom:20px;
+	border-bottom: 2px solid green;
+	color:#545454;
+}
+
+.content p{
+	font-size: 22px;
+	padding-top:20px;
+}
+
+#contribute{
+	padding-left:40px;
+	width
+}
