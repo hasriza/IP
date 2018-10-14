@@ -325,7 +325,7 @@ header h2 a{
 
 /*Background Window when modal pops up*/
 .container{
-    /*display:none;*/
+    display:none;
     z-index:1;
     position:fixed;
     top:0;
