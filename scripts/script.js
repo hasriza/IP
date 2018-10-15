@@ -17,6 +17,7 @@ var sticky = navbar.offsetTop;
 window.onresize=function(){if(document.getElementById("section")){document.getElementById("section").style.setProperty('margin-left','0px')};
 if(window.innerWidth>1530)
 {
+document.getElementById("contact").style.setProperty('padding-left','20px');
 document.getElementById("contact").style.setProperty('width','100%');
 document.getElementById("mainnav").style.setProperty('display','block');}
 else{
@@ -36,8 +37,8 @@ function clicked(){
 
 function clickopen(){
 	opt=1;
-	document.getElementById("contact").style.setProperty('width','60%');
-	document.getElementById("contact").style.setProperty('margin-left','280px');
+	document.getElementById("contact").style.setProperty('width','100%');
+	document.getElementById("contact").style.setProperty('padding-left','280px');
 	if(document.getElementById("section")){
 	document.getElementById("section").style.setProperty('margin-left','280px');}
 	navbar.style.setProperty('display','block');	
@@ -45,6 +46,7 @@ function clickopen(){
 
 function clickclose(){
 	opt=0;
+	document.getElementById("contact").style.setProperty('padding-left','20px');
 	document.getElementById("contact").style.setProperty('width','100%');
 	if(document.getElementById("section")){
 	document.getElementById("section").style.setProperty('margin-left','10px');}
