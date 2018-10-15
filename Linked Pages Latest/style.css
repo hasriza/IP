@@ -26,9 +26,9 @@
 	/*The color of all the subheadings and headings on all the pages*/
 	--headings:#6a6a6a;
 
-	--nav:'Roboto Condensed, sans-serif';
-	--head:'Playfair Display, serif';
-	--content:'Nanum Gothic, sans-serif';
+	--nav:'Roboto Condensed';
+	--head:'Palatino Linotype';
+	--content:'Garamond';
 }
 
 *{
@@ -40,7 +40,6 @@
 
 body{
 	background-color:var(--bg);	
-	font-family: var(--content);
 	font-size:25px;
 	overflow-y:scroll;
 	overflow-x:hidden;
@@ -107,11 +106,12 @@ header a{
 }
 
 #mainnav > ul > li{
+	font-family:var(--nav);
 	display: inline-block;
 	float:left;
-	font-size : 18px; 
+	font-size : 20px; 
 	text-transform: uppercase;
-	padding:0.42% 3%;
+	padding:0.42% 4%;
 	list-style: none;
 	box-sizing: border-box;
 }
@@ -125,8 +125,7 @@ header a{
 	top:16.8%;	
 	overflow: hidden;
 	background-color: green;
-	font-family: Tahoma;
-	width:13.7%;
+	width:14.6%;
 	float:left;
 	font-size: 15px;
 	font-weight: bold;
@@ -139,6 +138,8 @@ header a{
 }
 
 .drop ul li{
+	font-size:20px;
+	font-family:var(--nav);
 	list-style: none;
 	padding:10px;
 }
@@ -170,7 +171,7 @@ header a{
 	height: 3px;
 	background: black;
 	position: absolute;
-	bottom:-.45em;
+	bottom:-.25em;
 	left: 0;
 	right: 0;
 	transform: scale(0,1);
@@ -214,12 +215,18 @@ header a{
 }
 
 #section{
+	font-family: var(--head);
 	display: grid;
 	grid-template-columns: auto auto;
 	padding: 50px 50px;
 }
 
+#contact h2{
+	font-family: var(--head);
+}
+
 #section p{
+	font-family: var(--content);
 	line-height: 1.5em;
 	padding-left: 80px;
 }
