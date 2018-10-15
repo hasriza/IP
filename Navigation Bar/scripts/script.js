@@ -54,11 +54,12 @@ function dropHeight(){
 	if(window.innerWidth>1530)
 	{
 		dropper.style.setProperty('top',listheight+30+'px');
+		dropper.style.setProperty('left',listleft-30+'px');
 	}
 	else{
+		dropper.style.setProperty('left',listleft-54+'px');
 		dropper.style.setProperty('top',listheight-14+'px');
 	}
-	dropper.style.setProperty('left',listleft-54+'px');
 }
 
 function takeBack(){

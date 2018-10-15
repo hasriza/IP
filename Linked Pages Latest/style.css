@@ -1,5 +1,7 @@
 /*To not write the hexcodes repeatedly, declare them in the root element and use them as var(--color_name)*/
 /*General style*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 :root{
 	/*Header: #215732
 	Content Header: #6a6a6a
@@ -124,8 +126,8 @@ header a{
 	position:absolute;
 	top:16.8%;	
 	overflow: hidden;
-	background-color: green;
-	width:14.6%;
+	background-color: #efffc6;
+	width:16.5%;
 	float:left;
 	font-size: 15px;
 	font-weight: bold;
@@ -222,6 +224,7 @@ header a{
 }
 
 #contact h2{
+	text-decoration: underline;
 	font-family: var(--head);
 }
 
@@ -246,6 +249,7 @@ header a{
 
 /*Contact*/
 #contact{
+	text-align: center;
 	background-color: lightgrey;
 	padding-left: 5px;
 	padding-top: 20px;
@@ -466,7 +470,7 @@ header h2 a{
 
 #login_btn{
 	padding:10px 25px;
-	margin-top:10px;
+	margin-top:5px;
 }
 
 #login_btn h2{
@@ -600,6 +604,148 @@ header h2 a{
 	grid-auto-rows: 8em;
 }
 
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+    margin: auto;
+    float: right; 
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
 
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:8px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:8px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:8px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:8px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
 
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:8px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:8px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
 
+/*market*/
+
+.column img{
+  box-sizing: border-box;
+  width: 200px;
+  height: 300px;
+  padding:10px;
+}
+
+.column {
+
+    box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.column a{
+
+	text-decoration: none;
+}
+/* Clearfix (clear floats) */
+.row::after {
+	padding-bottom: 50px;
+    box-sizing: border-box;
+    content: "";
+    clear: both;
+    display: table;
+}
+.centeralign{
+    box-sizing: border-box;
+  text-align: center;
+}
+.column h3{
+    box-sizing: border-box;
+  text-align: center;
+  font-size: 30px;
+}

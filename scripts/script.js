@@ -14,12 +14,14 @@ var img=document.getElementById("img1");
 img.onclick=function(){clicked()};
 var opt=0;
 var sticky = navbar.offsetTop;
-window.onresize=function(){document.getElementById("section").style.setProperty('margin-left','0px');
+window.onresize=function(){if(document.getElementById("section")){document.getElementById("section").style.setProperty('margin-left','0px')};
 if(window.innerWidth>1530)
 {
+document.getElementById("contact").style.setProperty('width','100%');
 document.getElementById("mainnav").style.setProperty('display','block');}
 else{
-	document.getElementById("section").style.setProperty('top','0');
+	if(document.getElementById("section")){
+	document.getElementById("section").style.setProperty('top','0');}
 	clickclose();
 }};
 
@@ -34,13 +36,18 @@ function clicked(){
 
 function clickopen(){
 	opt=1;
-	document.getElementById("section").style.setProperty('margin-left','280px');
+	document.getElementById("contact").style.setProperty('width','60%');
+	document.getElementById("contact").style.setProperty('margin-left','280px');
+	if(document.getElementById("section")){
+	document.getElementById("section").style.setProperty('margin-left','280px');}
 	navbar.style.setProperty('display','block');	
 }
 
 function clickclose(){
 	opt=0;
-	document.getElementById("section").style.setProperty('margin-left','10px');
+	document.getElementById("contact").style.setProperty('width','100%');
+	if(document.getElementById("section")){
+	document.getElementById("section").style.setProperty('margin-left','10px');}
 	navbar.style.setProperty('display','none');	
 }
 
@@ -55,7 +62,7 @@ function dropHeight(){
 	if(window.innerWidth>1530)
 	{
 		dropper.style.setProperty('top',listheight+32+'px');
-		dropper.style.setProperty('left',listleft-70+'px');
+		dropper.style.setProperty('left',listleft-55+'px');
 	}
 	else{
 		dropper.style.setProperty('top',listheight-11+'px');
