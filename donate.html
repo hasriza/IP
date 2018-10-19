@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TetraFree | Donate</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/content.css" type="text/css">
-	<meta name="viewport" content="widthdevice-width">
+	<title>TetraFree | Home</title>
+	<link rel="stylesheet" href="Linked Pages Latest/style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Recycling TetraPack cartons into finished products">
 	<meta name="keywords" content="Recycle, TetraPack, TetraPack Benches">
 </head>
@@ -12,29 +14,45 @@
 
 	<!-- Main header, common on all pages, replace h1 by logo -->
 	<header>
-		<div class ="head">
-			<img src="images/logo.jpg">
-			<h1>Tetra<span id="free">free</span></h1>
+		<div id ="head">
+			<a href="index.html">
+				<img src="images/Capture.gif">
+				<h1>Tetra<span id="free">free</span></h1>
+				<button class="login" id="login_btn">Login</button>
+			</a>
 		</div>
-
-		<nav class="mainnav">
+		<div class="toggle">
+				<img src="images/Options.gif" width='35px' height="35px" id='img1'>
+		</div>
+		<nav id="mainnav">
+			
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="story.html">Our Story</a></li>
 				<li><a href="what_we_do.html">What We Do?</a></li>
-				<li><a href="work_with_us.html">Join The Cause</a></li>
-				<li><a href="Market.html">Tetra-Market</a></li>
-				<li><a href="@">Contact Details</a></li>
+				<li>
+					<a href="work_with_us.html" id='hit'>Join The Cause</a>	</li>
+					<div id ="dropdown">	
+						<div class="drop">
+							<ul>
+								<li><a href="donate.html"  id='1'>Donate</a></li>
+								<li><a href="work_with_us.html"  id="2">Work With Us</a></li>
+								<li><a href="volunteer.html"  id="3">Volunteer</a></li>
+							</ul>
+						</div>
+					</div>
+				<li><a href="market.html">Tetra-Market</a></li>
+				<li><a href="#contact">Contact Details</a></li>
 			</ul>
 		</nav>
-	</header>
 
-	<header class="hd">
+	</header>
+		<header class="hd">
 			<h1>Donate</h1>
 			<h3>Be The Change</h3>
 		</header>
 
-		<section class="container">
+		<section >
 
 			<article class="content">
 				<h2>Why?</h2>
@@ -58,27 +76,48 @@
 
 			<article class="content">
 				<h2>How can you help?</h2><br>
-				<!-- Change the iamge, put here only for reference
-					Steps to drop empty cartons, cut-clean-collect 
-					rinse-flip-flap-flatten-->
-				<img src="images/donor_contri.jpg" alt="Steps To Drop Cartons">
+				<img src="images/donor.gif" alt="Steps To Drop Cartons">
+				<div class='donimg'><a href="login.html" target="blank">Contribute</a></div>
 			</article>
 
 		</section>
 
-		<div id="contribute">
-			<a href="login.html" target="blank">Click Here To Contribute</a>
-		</div>
+
+	<section id='contact'>
+			<h2>Contact</h2>
+			<div id='contactdet1'>
+				<h4>Amarjeet</h4>
+				<a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a>
+				<a href="" class="social-icon"> <i class="fa fa-facebook"></i></a>
+        		<a href="" class="social-icon"> <i class="fa fa-twitter"></i></a>
+			</div>
+			<div id='contactdet2'>
+				<h4>Deeksha</h4>
+				<a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a>
+				<a href="" class="social-icon"> <i class="fa fa-facebook"></i></a>
+        		<a href="" class="social-icon"> <i class="fa fa-twitter"></i></a>
+			</div>
+			<div id='contactdet3'>
+				<h4>Riza</h4>
+				<a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a>
+				<a href="" class="social-icon"> <i class="fa fa-facebook"></i></a>
+        		<a href="" class="social-icon"> <i class="fa fa-twitter"></i></a>
+			</div>
+			
+	</section>
 
 	<footer>
-		<div class="foot">
+
+		<div class="foot">			
+			<img src="images/Capture.gif">
 			<ul>
-				<li><a href="FAQ.html"> FAQ </a></li>
-				<li><a href="privacy.html"> Privacy Policy </a></li>
+				<li><a href="@"> FAQ </a></li>			
+				<li><a href="@"> Privacy Policy </a></li>
 				<li>TetraFree&trade;&copy;&reg;</li>
 			</ul>
 		</div>
 	</footer>
-
+<script src="scripts/script.js" type="text/javascript"></script>
 </body>
 </html>
+
