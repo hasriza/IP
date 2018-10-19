@@ -748,12 +748,16 @@ ul {
 	padding-bottom: 50px;
 }
 
-.content a{
+#section a, .content a{
 	text-align: center;
 	color:grey;
 	text-decoration: none;
 }
 
-.content a:hover{
+#section a:hover, .content a:hover{
 	color:pink;
+}
+
+#new ul li{
+	padding:20px;
 }
