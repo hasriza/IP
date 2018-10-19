@@ -2,12 +2,12 @@
 //Get close button
 var close=document.getElementById("close_btn");
 //Get login button
-var login=document.getElementById("login_btn");
+var register=document.getElementById("register_btn");
 //Get container of form 
 var container=document.getElementById("f_cont");
 
 //Listen for click on register, page opens
-login.addEventListener('click', open_page);
+register.addEventListener('click', open_page);
 
 function open_page(){
 	container.style.display = 'block';
@@ -150,3 +150,30 @@ function confirmPassword(x,y){
 
 }
 
+//Login Modal
+//Get the login and container elements
+var login=document.getElementById('login_btn');
+var close1=document.getElementById('close_btn1');
+var lcontainer=document.getElementById('l_cont');
+
+login.addEventListener('click', open_login);
+
+function open_login(){
+	lcontainer.style.display='block';
+}
+
+//Listen for click on close, page closes
+close1.addEventListener('click', close_login);
+
+function close_login(){
+	lcontainer.style.display = 'none';
+}
+
+//Listen for Outside Click
+window.addEventListener('click', outsideLogin);
+
+function outsideLogin(e){
+	if(e.target == l_cont){
+		container1.style.display = 'none';
+	}
+}

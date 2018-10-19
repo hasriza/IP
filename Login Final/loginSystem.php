@@ -36,6 +36,12 @@
 
 				<fieldset>
 				<legend>OR</legend>
+
+				<?php
+					if(isset($msg)){
+						echo "<div class='message'>".$msg."</div>";
+					}
+				?>
 					
 					<div>
 						<input type="text" placeholder="Enter Name" name="fname" autofocus="on" autocomplete="on" size=35 >
@@ -104,7 +110,9 @@
 					</div>
 
 					<div id="check">
-						<input type="checkbox" value="check" class="checkbox1" required>I agree to the Terms and Conditions and Privacy Policy.</input>
+						<input type="checkbox" value="check" class="checkbox1" required
+
+						>I agree to the Terms and Conditions and Privacy Policy.</input>
 					</div>
 
 				</fieldset>
@@ -113,9 +121,9 @@
 		</div>
 	</div>
 		<!-- Login Form -->
-		<div id="l_cont" class="container">
+		<div id="l_cont" class="container2">
 			<div class="register" id="adjust_login">
-				<span class="close" id="close_btn">&times;</span>
+				<span class="close" id="close_btn1">&times;</span>
 				<header>
 					<h2><a href="register.html">Register</a></h2>
 				</header>
