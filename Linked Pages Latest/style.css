@@ -241,9 +241,18 @@ header a{
 	padding-left: 80px;
 }
 
-.imgb{
+.imgb img{
 	text-align: center;
 	padding: 50px 0px;
+	width:600px;
+	height:500px;
+}
+
+.imgc{
+	width:350px;
+	height:350px;
+	float:left;
+	padding:10px;
 }
 
 .imghide img{
