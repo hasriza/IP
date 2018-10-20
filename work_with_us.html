@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>TetraFree | Home</title>
-	<link rel="stylesheet" href="Linked Pages Latest/style.css" type="text/css">
+	<link rel="stylesheet" href="style/style.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
@@ -13,40 +13,7 @@
 <body>
 
 	<!-- Main header, common on all pages, replace h1 by logo -->
-	<header>
-		<div id ="head">
-			<a href="index.html">
-				<img src="images/Capture.gif">
-				<h1>Tetra<span id="free">free</span></h1>
-				<button class="login" id="login_btn">Login</button>
-			</a>
-		</div>
-		<div class="toggle">
-				<img src="images/Options.gif" width='35px' height="35px" id='img1'>
-		</div>
-		<nav id="mainnav">
-			
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="story.html">Our Story</a></li>
-				<li><a href="what_we_do.html">What We Do?</a></li>
-				<li>
-					<a href="work_with_us.html" id='hit'>Join The Cause</a>	</li>
-					<div id ="dropdown">	
-						<div class="drop">
-							<ul>
-								<li><a href="donate.html"  id='1'>Donate</a></li>
-								<li><a href="work_with_us.html"  id="2">Work With Us</a></li>
-								<li><a href="volunteer.html"  id="3">Volunteer</a></li>
-							</ul>
-						</div>
-					</div>
-				<li><a href="market.html">Tetra-Market</a></li>
-				<li><a href="#contact">Contact Details</a></li>
-			</ul>
-		</nav>
-
-	</header>
+	<?php require "head.html" ?>
 
 	<header class="hd">
 		<h1>Work With Us</h1>
