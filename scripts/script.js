@@ -14,7 +14,7 @@ var img=document.getElementById("img1");
 img.onclick=function(){clicked()};
 var opt=0;
 var sticky = navbar.offsetTop;
-window.onresize=function(){if(document.getElementById("section")){document.getElementById("section").style.setProperty('margin-left','0px')};
+window.onresize=function(){sticky = navbar.offsetTop;if(document.getElementById("section")){document.getElementById("section").style.setProperty('margin-left','0px')};
 if(window.innerWidth>1530)
 {
 document.getElementById("contact").style.setProperty('padding-left','20px');
