@@ -13,7 +13,7 @@
 <body>
 
 	<!-- Main header, common on all pages, replace h1 by logo -->
-	<?php require "head.html" ?>
+	<?php require "head.php" ?>
 		<header class="hd">
 			<h1>Donate</h1>
 			<h3>Be The Change</h3>
@@ -50,7 +50,7 @@
 		</section>
 </div>
 
-	<?php require "foot.html" ?>
+	<?php require "foot.php" ?>
 	
 <script src="scripts/script.js" type="text/javascript"></script>
 </body>

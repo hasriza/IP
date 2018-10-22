@@ -13,7 +13,7 @@
 <body>
 
 	<!-- Main header, common on all pages, replace h1 by logo -->
-	<?php require "head.html" ?>
+	<?php require "head.php" ?>
 	<div id='section'>
 		<section>
 			<div class='c1'>
@@ -72,7 +72,7 @@
 		
 	</div>
 
-	<?php require "foot.html" ?>
+	<?php require "foot.php" ?>
 	
 <script src="scripts/script.js" type="text/javascript"></script>
 </body>

@@ -13,7 +13,7 @@
 	--header:#215732;
 	/*This has been used for anything that is written on the page, including the forms*/
 	--detail:#6a6a6a;
-	--navbar:#1e88e5;
+	--navbar:#efffc6;
 	--link:#215732;
 	--bg: #f6fff4;
 	/*Used in the transformation in the link*/
@@ -63,7 +63,7 @@ header a{
 	width:100%;
 	padding:5px;
 	padding-bottom: 0px;
-	background-color: #efffc6;	
+	background-color: var(--navbar);	
 	box-sizing:border-box;
 }
 
@@ -762,4 +762,35 @@ ul {
 
 #new ul li{
 	padding:20px;
+}
+
+#admin_select{
+	padding: 10px;
+	max-height: 50px;
+	width:80%;
+	font: normal 20px var(--content);
+}
+
+#push{
+	padding: 30px;
+	text-align: center;
+}
+
+#adm{
+	font-size:60px;
+}
+
+.user_det{
+	background-color: white;
+	display: none;
+	padding:20px;
+}
+
+.user_det th{
+	background-color: darkgrey;
+	padding:8px 100px;
+}
+
+#validate{
+	display:none;
 }

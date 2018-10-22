@@ -13,7 +13,7 @@
 <body>
 
   <!-- Main header, common on all pages, replace h1 by logo -->
-  <?php require "head.html" ?>
+  <?php require "head.php" ?>
 <body>
   <div id='section'>
 <div class="centeralign">
@@ -36,7 +36,7 @@
   </div>
 </div>
 </div>
-  <?php require "foot.html" ?>
+  <?php require "foot.php" ?>
   
 <script src="scripts/script.js" type="text/javascript"></script>
 </body>
