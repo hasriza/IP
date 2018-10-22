@@ -12,17 +12,17 @@
 <body>
 	<!--PHP code to check if user is logged in and display data accordingly!-->
 	<?php
-			if(isset($_SESSION['uid'])){
-				// Edit here to get the profile box
-				echo "<form action='logout.php'>
-				<button type='submit' name='logoutbttn' id='logout_btn' class='login'>Logout</button>
-				</form>";
-			}
-			else{
-				echo "<button class='login' id='login_btn'>Login</button>
-				<button class='login' id='register_btn'>Register</button>";
-			}
-		?>
+		if(isset($_SESSION['uid'])){
+			// Edit here to get the profile box
+			echo "<form action='logout.php'>
+			<button type='submit' name='logoutbttn' id='logout_btn' class='login'>Logout</button>
+			</form>";
+		}
+		else{
+			echo "<button class='login' id='login_btn'>Login</button>
+			<button class='login' id='register_btn'>Register</button>";
+		}
+	?>
 	
 		<!-- Form Modal-->
 	<div id="f_cont" class="container1">
@@ -36,15 +36,9 @@
 
 				<fieldset>
 				<legend>OR</legend>
-
-				<?php
-					if(isset($msg)){
-						echo "<div class='message'>".$msg."</div>";
-					}
-				?>
 					
 					<div>
-						<input type="text" placeholder="Enter Name" name="fname" autofocus="on" autocomplete="on" size=35 >
+						<input type="text" placeholder="Full Name" name="fname" autofocus="on" autocomplete="on" size=35 >
 						<div id="error"></div>
 					</div>
 					<div class="error" id="nameerr">
@@ -52,21 +46,21 @@
 					</div>
 
 					<div>
-						<input type="text" placeholder="Enter Phone Number" name="numb" autocomplete="on" size=35 >
+						<input type="text" placeholder="Phone Number" name="numb" autocomplete="on" size=35 >
 					</div>
 					<div class="error" id="contacterr">
 						<p></p>
 					</div>
 
 					<div>
-						<input type="text" placeholder="Enter Address" name="add" size=35 autocomplete="on">
+						<input type="text" placeholder="Address" name="add" size=35 autocomplete="on">
 					</div>
 					<div class="error" id="adderr">
 						<p></p>
 					</div>
 
 					<div>
-						<input type="text" placeholder="Enter Email" name="uemail" size=35 autocomplete="on">
+						<input type="text" placeholder="Email" name="uemail" size=35 autocomplete="on">
 					</div>
 					<div class="error" id="mailerr">
 						<p></p>
@@ -75,24 +69,24 @@
 					<div>
 						
 						<select name="join" class="select_join">
-							<option>-- Join As --</option>
+							<option disabled value selected>Join As</option>
 							<option value="donor">Donor</option>
 							<option value="delivery">Delivery Personnel</option>
 							<option value="company">Recycling Company</option>
 							<option value="volunteer">Volunteer</option>
-							<option value="sponsor">Sponsor</option>
+							<option value="ngo">NGO</option>							
 						</select>
 					</div>
 
 					<div>
-						<input type="text" placeholder="Enter Username" name="uname" size=35 autocomplete="on" >
+						<input type="text" placeholder="Username" name="uname" size=35 autocomplete="on" >
 					</div>
 					<div class="error" id="usererr">
 						<p></p>
 					</div>
 
 					<div>
-						<input type="Password" placeholder="Enter Password" name="pass" size=35 >
+						<input type="Password" placeholder="Password" name="pass" size=35 >
 					</div>
 					<div class="error" id="passerr">
 						<p></p>

@@ -28,9 +28,17 @@
 						$_SESSION['uid'] = $row['id'];
 						$_SESSION['uname'] = $row['name'];
 
-						if($row['role']='donor'){
+						if($row['role']=='donor'){
 							echo "Logged in!";
 							header("Location: ../donor.php");
+						}
+						else if($row['role']=='volunteer'){
+							echo "Logged in!";
+							header("Location: ../volunteer.php");
+						}
+						else if($row['role']=='ngo'){
+							echo "Logged in!";
+							header("Location: ../ngo.php");
 						}
 				}
 				else{
