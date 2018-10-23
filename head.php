@@ -16,7 +16,7 @@
 				<li><a href="story.php">Our Story</a></li>
 				<li><a href="what_we_do.php">What We Do?</a></li>
 				<li>
-					<a href="work_with_us.php" id='hit'>Join The Cause</a>	</li>
+					<a  id='hit'>Join The Cause</a>	</li>
 					<div id ="dropdown">	
 						<div class="drop">
 							<ul>

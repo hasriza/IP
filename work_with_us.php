@@ -22,6 +22,14 @@
 	<div id="section">
 	<section>
 		<section class="content">
+			<h2>How Do Cartons Get Recycled?</h2>
+			<p>
+				1. Once the carton is collected, it is sorted and seperated from other recyclables, flattened and comapcted. Once enough of these cartons are collected, they're taken to the recycling plants.<br>
+				2. They are put into a pulper and filled with water and pulped for a short duration. The hydra pulping process seperates polyethyelene and aluminium. the fibre is recovered and converted into pulp sheets. These sheets are used to get various products. <br>
+				3. The residue is extracted and converted into other products!
+			</p>
+		</section>		
+		<section class="content">
 			<h2>Help Us Collect</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -41,17 +49,6 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<a href="register.html">Recycle The Cartons</a>
-		</section>
-
-		<section class="content">
-			<h2>Help Us Bring The Change</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<a href="register.html">Campaign For Us</a>
 		</section>
 	</section>
 

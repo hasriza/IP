@@ -15,7 +15,7 @@
 	--detail:#6a6a6a;
 	--navbar:#efffc6;
 	--link:#215732;
-	--bg: #f6fff4;
+	--bg: #ffffff;
 	/*Used in the transformation in the link*/
 	--highlight:#f8b195;
 	/*Header text*/
@@ -566,6 +566,10 @@ header h2 a{
 	grid-column:3;
 }
 
+.story1 p div{
+	font-size: 20px;
+}
+
 .story2 img{
 	grid-column: 2;
 	grid-row:4;
@@ -703,24 +707,25 @@ ul {
     background-color: #e25714;
 }
 
-/*market*/
+/*Market Page*/
 
-.column img{
+.marimg img{
   box-sizing: border-box;
-  width: 200px;
+  width: 400px;
   height: 300px;
   padding:10px;
 }
 
-.column {
+.marimg {
     box-sizing: border-box;
-    float: left;
+   float: left;
     width: 33.33%;
-    padding: 5px;
+    padding: 10px;
 }
 
-.column a{
+.marimg a{
 	text-decoration: none;
+
 }
 /* Clearfix (clear floats) */
 .row::after {
@@ -746,8 +751,30 @@ ul {
 	padding:30px;
 }
 
+/*Index page*/
+.indexcon{
+	color:green;
+	font-weight:bold;
+}
+
+/*Donate Page*/
+.donbg{
+	background-image:url(images/donor.jpg);
+	background-repeat: no-repeat;
+	height:600px;
+	width:100%;
+	margin:2% 5%;
+}
+
 .donimg{
+	width:60%;
 	padding-bottom: 50px;
+}
+
+.dongreen{
+	color:green;
+	font-weight:bold;
+	font-size: 32px;
 }
 
 #section a, .content a{
@@ -794,3 +821,4 @@ ul {
 #validate{
 	display:none;
 }
+
