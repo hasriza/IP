@@ -435,22 +435,7 @@ header h2 a{
     font-size:25px;
 }
 
-/*Form JavaScript CSS*/
-/*Close Button*/
-.close{
-    color:gray;
-    float:left;
-    font-size:40px;
-    font-weight: bold;
-}
-
-.close:hover , .close:focus{
-    color:black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/*Background Window when modal pops up*/
+/*Form Javascript*/
 .container{
     display:none;
     z-index:1;
@@ -509,6 +494,86 @@ header h2 a{
 
 .login:hover{
     background-color:orange;
+}
+
+/*Form JavaScript CSS*/
+/*Close Button*/
+.close{
+    color:gray;
+    float:left;
+    font-size:40px;
+    font-weight: bold;
+}
+
+.close:hover , .close:focus{
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Background Window when modal pops up*/
+.container1{
+    display:none;
+    z-index:1;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+.container2{
+    display:none;
+    z-index:1;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+.login{
+    padding:15px 25px;
+    font-size:20px;
+    border-radius: 6px;
+}
+
+.register{
+    margin-left:30%;
+    width:40%;
+    height:98%;
+    margin-top: 1%;
+/*    border-radius: 5px;
+*/  background-color:var(--bg);
+    padding:20px;
+    opacity:1;
+}
+
+#adjust_login{
+    height:50%;
+    margin-top:10%;
+}
+
+#adjust_login h2{
+    margin-left:0.1%;
+}
+
+/*For displaying the errors*/
+.error{
+    margin-left: 2%;
+    color:#b71c1c;
+    font-size:20px;
+}
+
+/*Trial CSS for forms using 2 different buttons*/
+#login_btn{
+    margin-right:10%;
+}
+
+.container2{
+	display:none;
 }
 
 /*Page - WhatWeDo*/
@@ -582,26 +647,6 @@ header h2 a{
 	grid-row:4;
 	grid-column:3;
 }
-
-
-/*#whatwedo{
-	display: grid;
-	grid-template-rows: 1fr 7fr;
-	grid-template-columns: 1fr 8fr 1fr;
-	grid-gap:1em;
-}
-
-#shd{
-	grid-column: 2;
-	grid-row:1;
-}
-
-#process{
-	grid-column:2;
-	grid-row:2;
-}
-*/
-/*Container for all pages*/
 
 .hd{
 	font-size:36px;
@@ -822,3 +867,145 @@ ul {
 	display:none;
 }
 
+/*Pages on Login*/
+/*Iframes - API */
+iframe {
+margin-top: 20px;
+margin-bottom: 30px;
+width: 50%;
+margin-left: auto;
+margin-right: auto;  
+-moz-border-radius: 12px;
+-webkit-border-radius: 12px;
+border-radius: 12px;
+-moz-box-shadow: 4px 4px 14px #000;
+-webkit-box-shadow: 4px 4px 14px #000;
+box-shadow: 4px 4px 14px #000;
+filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+padding: 20px 10px;
+display: block;
+} 
+h1{
+    text-align: center;
+    color: black;
+    font-family:'Helvetica', serif;;
+    font-weight: bold;
+
+}
+h3{
+    text-align: left;
+    color: black;
+    font-family:'Helvetica', serif;;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 15px; 
+
+}
+h4{
+    text-align:left;
+    margin:auto;
+    color: black;
+    font-family:'Helvetica', serif;;
+    font-weight: bold;
+    font-size: 30px;    
+    padding-left: 15px;
+
+}
+.reliance a:link{
+    background-color: cyan;
+    padding: 14px 25px ;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    width: 20%;
+    font-size: 20px;
+    margin:10px; 
+
+}
+
+
+.bhan a:link{
+    background-color: cyan;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+a:visited :{
+    background-color: lightgreen;
+}
+
+
+/*DONOR PAGES*/
+/*Block that appears when user logs in*/
+.logBlock{
+    position:absolute;
+    /*background-color: pink;*/
+    right:0%;
+    padding:5% 1% 5% 5%;
+    width:18%;
+    height:20%;
+    text-align:right;
+    font-size:30px;
+    text-decoration:underline;
+}
+
+/*User buttons on user profile pages*/
+.userbttn{
+    position:absolute;
+    top:20%;
+    padding:5%;
+    background-color:pink;
+    opacity:0.8;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/*Donor login page features*/
+#dbt1{
+    right:80%;
+}
+
+#dbt2{
+    right:50%;
+}
+
+#dbt3{
+    right:20%;
+}
+
+#reqpick{
+    display:none;
+}
+
+#donlogs{
+    display:none;
+}
+
+/*Volunteer login oage features*/
+#vol1{
+    right:80%;
+}
+
+#vol2{
+    right:50%;
+}
+
+#vol3{
+    right:20%;
+}
+
+#newcamp{
+    display:none;
+}
+
+.voldate select{
+    float:left;
+    margin-right:10%;
+    padding:2%;
+    border: 1px solid #d4d4d4;
+}
+
+/*NGO login page features*/
+#ngo_cont{
+    display:none;
+}
