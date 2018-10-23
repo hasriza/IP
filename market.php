@@ -1,3 +1,4 @@
+<?php require "session.php" ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,17 +22,21 @@
 <h2>Endorse The Change!!!</h2>
 <p>The place to buy products</p><hr>
 </div>
+<div>  </div>
+
 <div class="row">
-  <div class="column"><a href="@">
-    <img src="images/scc.jpg" alt="Snow" style="width:100%">
+  
+
+  <div class="marimg"><a href="@">
+    <img src="images/scc.png" alt="Books">
     <h3>Books</h3></a>
   </div>
-  <div class="column"><a href="@">
-    <img src="images/benches.jpg" alt="Forest" style="width:100%">
+  <div class="marimg"><a href="@">
+    <img src="images/benches.jpg" alt="Benches">
     <h3>Benches</h3></a>
   </div>
-  <div class="column"><a href="@">
-    <img src="images/roofs.jpg" alt="Mountains" style="width:100%">
+  <div class="marimg"><a href="@">
+    <img src="images/roofs.jpg" alt="Roof">
     <h3>Roofs</h3></a>
   </div>
 </div>

@@ -1,3 +1,4 @@
+<?php require "session.php" ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,12 +20,7 @@
 			<div class='c1'>
 				<h1>Content</h1>
 				<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				A tetrapacks journey never ends. It goes on and on, From being the provides of safe food to everyone to being a bench, or a notebook, or a roof, to every underprivileged school kid! Every time the pack is used, it stands a chance to start a new life. <span class="indexcon">But only if it ends at the right place  - in the recycle bin.</span>
 				</p>
 			</div>
 		</section>
