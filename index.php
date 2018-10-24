@@ -18,7 +18,34 @@
 	<div id='section'>
 		<section>
 			<div class='c1'>
-				<h1>Content</h1>
+				<p>
+				Tetrapacks have often been infamous for not being biodegradable, yet forming an inevitable part of the packaging industry. Recycling - is the way. 
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<div  class="imgb">
+			<img src="images/index1.png" width="400px" height="250px">
+		</div>
+		</section>
+		
+		<section>
+			<div  class="imgb">
+				<img src="images/index2.jpg" width="400px" height="250px"></div>
+		</section>
+		<section>
+				<div class='c2'>
+				<h1>Recycle your</h1>
+				<p>
+				Every second, about 5,500 Tetra Pak cartons are consumed across the world. Imagine the number of desks, notebook and roofs all these cartons can be used to make. Most of us consume beverages from Tetra Pak cartons every day, but many of us don’t spare a thought about what happens to the cartons when we put them in a bin. Next time you have an empty carton in your hand, consider <span class="indexcon"> RECYCLING!</span>
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<div class='c1'>
+				<h1>Why? - The Smiles Are Worth It!</h1>
 				<p>
 				A tetrapacks journey never ends. It goes on and on, From being the provides of safe food to everyone to being a bench, or a notebook, or a roof, to every underprivileged school kid! Every time the pack is used, it stands a chance to start a new life. <span class="indexcon">But only if it ends at the right place  - in the recycle bin.</span>
 				</p>
@@ -26,44 +53,7 @@
 		</section>
 		<section>
 			<div  class="imgb">
-			<img src="images/Capture.gif" width="400px" height="250px">
-		</div>
-		</section>
-		
-		<section>
-			<div  class="imgb">
-				<img src="images/Capture.gif" width="400px" height="250px"></div>
-		</section>
-		<section>
-				<div class='c2'>
-				<h1>Content</h1>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
-		</section>
-
-		<section>
-			<div class='c1'>
-				<h1>Content</h1>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
-		</section>
-		<section>
-			<div  class="imgb">
-			<img src="images/Capture.gif" width="400px" height="250px"></div>
+			<img src="images/index3.jpg" width="400px" height="250px"></div>
 		</section>
 		
 	</div>

@@ -34,11 +34,19 @@
 						}
 						else if($row['role']=='volunteer'){
 							echo "Logged in!";
-							header("Location: ../IP/volunteer.php");
+							header("Location: ../IP/volunteerlogin.php");
 						}
 						else if($row['role']=='ngo'){
 							echo "Logged in!";
 							header("Location: ../IP/ngo.php");
+						}
+						else if($row['role']=='company'){
+							echo("Logged in!");
+							header("Location: ../IP/company.php");
+						}
+						else if($row['role']=='delivery'){
+							echo("Logged in!");
+							header("Location: ../IP/worker.php");
 						}
 				}
 				else{
@@ -51,7 +59,7 @@
 		}
 	}
 	else{
-		header("Location:../loginSystem.php");
+		header("Location:../IP/index.php");
 		exit();
 	}
 

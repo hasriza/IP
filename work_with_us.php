@@ -16,39 +16,32 @@
 	<!-- Main header, common on all pages, replace h1 by logo -->
 	<?php require "head.php" ?>
 
-	<header class="hd">
+	<header class="hd" id="work">
+		<img src="images/work.png">
 		<h1>Work With Us</h1>
 		<h3>Help Bring The Change</h3>
 	</header>
 	<div id="section">
 	<section>
 		<section class="content">
-			<h2>How Do Cartons Get Recycled?</h2>
-			<p>
-				1. Once the carton is collected, it is sorted and seperated from other recyclables, flattened and comapcted. Once enough of these cartons are collected, they're taken to the recycling plants.<br>
-				2. They are put into a pulper and filled with water and pulped for a short duration. The hydra pulping process seperates polyethyelene and aluminium. the fibre is recovered and converted into pulp sheets. These sheets are used to get various products. <br>
-				3. The residue is extracted and converted into other products!
-			</p>
+			<h2>Cartons Se Classroom Tak</h2>
+			<p>Here's What Happens</p>
+			<img src="images/steps1.png"><span class="worksteps"> 1. Deposited cartons are collected and sent to factories.</span><br>			
+			<img src="images/steps2.png"><span class="worksteps">2. In the factory they are shrreded into pieces.</span><br>
+			<img src="images/steps3.png"><span class="worksteps">3. These pieces are then laid out in a press as per sheet thickness.</span><br>
+			<img src="images/steps4.png"><span class="worksteps">4. These sheets are compacted under high pressure.</span><br>
+			<img src="images/steps5.png"><span class="worksteps">5. Ready to be made into Classroom benches!</span>
 		</section>		
 		<section class="content">
 			<h2>Help Us Collect</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Join in as a delivery personnel and help us make it easier for the cartons to reach us!</p>
 			<a href="register.html">Join As Delivery Personnel</a>
 		</section>
 
 		<section class="content">
-			<h2>Help Us Recycle</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h2>Help Us Recycle</h2>			
+			<img src="images/recycleproc.jpg">
+			<p>Collecting cartons is just the beginning, but transforming it into useful products -  THAT'S THE GOAL!</p>
 			<a href="register.html">Recycle The Cartons</a>
 		</section>
 	</section>

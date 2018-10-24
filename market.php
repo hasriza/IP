@@ -28,7 +28,7 @@
   
 
   <div class="marimg"><a href="@">
-    <img src="images/scc.png" alt="Books">
+    <img src="images/books.jpg" alt="Books">
     <h3>Books</h3></a>
   </div>
   <div class="marimg"><a href="@">

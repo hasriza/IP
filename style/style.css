@@ -653,30 +653,33 @@ header h2 a{
 	color:var(--headings);
 }
 
-/*PICKUP*/
-
-/*.pickup img{
-	height:130px;
-	width:130px;
-}*/
+/*Pickups*/
 
 .pickup{
-	background-image: url("cimages/delivery_boy.jpg");
+	background-image: url("images/pickup.jpg");
 	background-color:green;
 	padding :8px;
-	opacity:0.8;
 	color:white;
 	border: 5px solid black ;
 }
 
-.pickup:nth-child(even){
-	background-image: url("cimages/delivery_girl.jpg");
+.deliver{
+	background-image: url("images/deliver.jpg");
+	opacity:0.8;
+	background-color:green;
+	padding :8px;
+	color:white;
+	border: 5px solid black ;
 }
 
-.pickup:nth-child(odd){
-	background-image: url("cimages/delivery_boy.jpg");
+.product{
+	background-image: url("images/product.jpg");
+	opacity:0.8;
+	background-color:green;
+	padding :8px;
+	color:white;
+	border: 5px solid black ;
 }
-
 
 /* Pickup grid */
 .pickups{
@@ -688,6 +691,27 @@ header h2 a{
 	grid-template-columns: repeat(auto-fit, minmax(300px, 0.7fr));
 	grid-auto-rows: 8em;
 }
+
+.delivers{
+	padding-top:1em;
+	padding-left:4em;
+	padding-right:4em;
+	display:grid;
+	grid-gap:1em;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 0.7fr));
+	grid-auto-rows: 8em;
+}
+
+.products{
+	padding-top:1em;
+	padding-left:4em;
+	padding-right:4em;
+	display:grid;
+	grid-gap:1em;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 0.7fr));
+	grid-auto-rows: 8em;
+}
+
 
 ._12 {
     font-size: 1.2em;
@@ -867,6 +891,13 @@ ul {
 	display:none;
 }
 
+/*Work with us*/
+.worksteps{
+	font-size:30px;
+	color:#0b6623;
+	font-weight: bold;
+}
+
 /*Pages on Login*/
 /*Iframes - API */
 iframe {
@@ -1009,3 +1040,4 @@ a:visited :{
 #ngo_cont{
     display:none;
 }
+
