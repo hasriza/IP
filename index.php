@@ -12,7 +12,6 @@
 	<meta name="keywords" content="Recycle, TetraPack, TetraPack Benches">
 </head>
 <body>
-
 	<!-- Main header, common on all pages, replace h1 by logo -->
 	<?php require "head.php" ?>
 	<div id='section'>
