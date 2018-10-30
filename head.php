@@ -20,9 +20,9 @@
 					<div id ="dropdown">	
 						<div class="drop">
 							<ul>
-								<li><a href="donate.php"  id='1'>Donate</a></li>
-								<li><a href="work_with_us.php"  id="2">Work With Us</a></li>
-								<li><a href="volunteer.php"  id="3">Volunteer</a></li>
+								<li class='list'><a href="donate.php"  id='1'>Donate</a></li>
+								<li class='list'><a href="work_with_us.php"  id="2">Work With Us</a></li>
+								<li class='list'><a href="volunteer.php"  id="3">Volunteer</a></li>
 							</ul>
 						</div>
 					</div>

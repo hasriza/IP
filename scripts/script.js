@@ -83,10 +83,14 @@ function myFunction() {
 	}
 	if (window.pageYOffset >= sticky) {
 	  	navbar.style.setProperty('background-color',bdstyle.backgroundColor);
+	  	dropper.style.setProperty('background-color',bdstyle.backgroundColor);
 	    navbar.classList.add("sticky");
+	    navbar.classList.add("listbg");
 	} 
 	else {
 		navbar.style.setProperty('background-color',hdstyle.backgroundColor);
+		dropper.style.setProperty('background-color',hdstyle.backgroundColor);
 	    navbar.classList.remove("sticky");
+	    navbar.classList.remove('listbg');
 	 }
 	}

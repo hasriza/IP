@@ -12,10 +12,28 @@
 	<meta name="keywords" content="Recycle, TetraPack, TetraPack Benches">
 </head>
 <body>
-
 	<!-- Main header, common on all pages, replace h1 by logo -->
 	<?php require "head.php" ?>
 	<div id='section'>
+		<div class="slidercontainer">  
+        <div class="showSlide fade">  
+            <img src="j1.png" width="25px" height="500px" />  
+            <div class="content">Get The cartons-flip flat flat</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="j2.jpg" width="25px" height="500px" />  
+            <div class="content">Recyle the catons-squish and squash</div>  
+        </div>  
+  
+        <div class="showSlide fade">  
+            <img src="j3.jpg" width="25px" height="500px" />  
+            <div class="content">Help to transform few lives</div>  
+        </div>  
+
+        <!-- Navigation arrows -->  
+        <a class="left" onclick="nextSlide(-1)"><img src  ="p1.jpg" width="25px"></a>  
+        <a class="right" onclick="nextSlide(1)"><img src  ="p2.jpg" width="25px"></a>  
+    </div>  
 		<section>
 			<div class='c1'>
 				<p>
@@ -61,5 +79,6 @@
 	<?php require "foot.php" ?>
 	
 <script src="scripts/script.js" type="text/javascript"></script>
+<script src="scripts/slider.js" type="text/javascript"></script>
 </body>
 </html>
