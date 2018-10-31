@@ -30,15 +30,19 @@
 
 						if($row['role']=='donor'){
 							echo "Logged in!";
-							header("Location: ../IP/donor.php");
+							header("Location: donor.php");
 						}
 						else if($row['role']=='volunteer'){
 							echo "Logged in!";
-							header("Location: ../IP/volunteer.php");
+							header("Location: volunteer.php");
 						}
 						else if($row['role']=='ngo'){
 							echo "Logged in!";
-							header("Location: ../IP/ngo.php");
+							header("Location: ngo.php");
+						}
+						else if($row['role']=='admin'){
+							echo "Logged in!";
+							header("Location: admin.php");
 						}
 				}
 				else{
