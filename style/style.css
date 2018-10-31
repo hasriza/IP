@@ -583,6 +583,10 @@ header h2 a{
     cursor: pointer;
 }
 
+.hide{
+	display:none;
+}
+
 /*Background Window when modal pops up*/
 .container1{
     display:none;

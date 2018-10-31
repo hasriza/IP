@@ -30,7 +30,7 @@
 									</tr>";
 							while ($row = mysqli_fetch_assoc($res))
 							{
-								echo "<tr><td>".$row['id']."</td><td>".$row['username']."</td><td>".$row['auth']."</td><td id='".$row['id']."'><button class='tick_btn'>&#10004;</button></td><td class='delete' id='".$row['id']."'><button class='close_btn'>&times;</button></td></tr>";
+								echo "<tr><td>".$row['id']."</td><td>".$row['username']."</td><td>".$row['auth']."</td><td id='".$row['id']."'><button class='tick_btn' value='".$row['id']."'>&#10004;</button></td><td class='delete' value='".$row['id']."'><button class='close_btn'>&times;</button></td></tr>";
 							}
 							echo "</table>
 							</div>";
@@ -63,7 +63,7 @@
 									</tr>";
 						while ($row = mysqli_fetch_assoc($res))
 						{
-							echo "<tr><td>".$row['id']."</td><td>".$row['username']."</td><td class='delete' id='".$row['id']."'><button class='close_btn'>&times;</button></td></tr>";
+							echo "<tr><td>".$row['id']."</td><td>".$row['username']."</td><td class='delete'><button class='close_btn' value='".$row['id']." '>&times;</button></td></tr>";
 						}
 						echo "</table>
 							</div>";
@@ -74,6 +74,20 @@
 					}
 				}
 			}
+			echo "<script>$('.close_btn').click(function(){
+					var id = $(this).val();
+					$.post('del_rec.php',{id:id},function(){alert('Record '+id+' Deleted!')});
+					location.reload();
+				});
+				if($('.tick_btn'))
+				{
+				$('.tick_btn').click(function(){
+					var id = $(this).val();
+					$.post('acc_rec.php',{id:id},function(){alert('Record '+id+' Validated!')});
+					location.reload();
+				});
+				}
+				</script>";
 	}
 	else{
 		header("Location: ../admin.php");
