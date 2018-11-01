@@ -47,6 +47,7 @@ body{
 	font-size:25px;
 	overflow-y:scroll;
 	overflow-x:hidden;
+	font-family: var(--content);
 }
 
 header{
@@ -78,6 +79,7 @@ header a{
 	font-size: 50px;
 	color:#545454;
 	font-weight: bold;
+	text-align: left;
 }
 
 #free{
@@ -98,7 +100,7 @@ header a{
 #mainnav{
 	background-color: #efffc6;
 	width:100%;
-	z-index:100;
+	z-index:1000;
 	float:left;
 	font-weight: bold;
 	padding-top:10px;
@@ -120,11 +122,12 @@ header a{
 	box-sizing: border-box;
 }
 
-#mainnav ul li:hover{
+.listbg ul li:hover{
 	background-color: yellow;
 }
 
 #dropdown{
+	z-index: 1000;
 	position:absolute;
 	top:16.8%;	
 	overflow: hidden;
@@ -160,6 +163,7 @@ header a{
 	position: relative;
 }
 
+
 /*mainnav scroll*/
 .sticky {
 	border-bottom: 1px solid green;
@@ -194,6 +198,49 @@ header a{
 #img1{
 	cursor: pointer;
 }
+
+@media(max-width: 2052px)
+{
+	#mainnav > ul > li{
+		padding:0.42% 4%;
+	}
+}
+
+@media(max-width: 1971px)
+{
+	#mainnav > ul > li{
+		padding:0.42% 3.9%;
+	}
+}
+
+@media(max-width: 1837px)
+{
+	#mainnav > ul > li{
+		padding:0.42% 3.7%;
+	}
+}
+
+@media(max-width: 1757px)
+{
+	#mainnav > ul > li{
+		padding:0.42% 3.5%;
+	}
+}
+
+@media(max-width: 1693px)
+{
+	#mainnav > ul > li{
+		padding:0.42% 3.3%;
+	}
+}
+
+@media(max-width: 1601px)
+{
+	#mainnav > ul > li{
+		padding:0.42% 3.1%;
+	}
+}
+
 @media (max-width: 1530px){
 	.toggle
 	{	
@@ -252,7 +299,8 @@ header a{
 
 .c1{
 	padding: 50px 0px;
-}
+
+	}
 
 .c2{
 	padding: 50px 0px;
@@ -397,10 +445,6 @@ hr {
     font-size:20px;
 }
 
-button:hover{
-    opacity: 1; 
-}
-
 form span{
     color: black;
     opacity: 0.9;
@@ -449,7 +493,7 @@ header h2 a{
 
 .login{
 	z-index: 1000;
-    padding:15px 25px;
+    padding:5px 25px;
     font-size:20px;
     border-radius: 6px;
 }
@@ -535,7 +579,7 @@ header h2 a{
 }
 
 .login{
-    padding:15px 25px;
+    padding:10px 25px;
     font-size:20px;
     border-radius: 6px;
 }
@@ -569,7 +613,13 @@ header h2 a{
 
 /*Trial CSS for forms using 2 different buttons*/
 #login_btn{
-    margin-right:10%;
+	margin-top: 0.3%;
+    margin-right:8%;
+}
+
+#register_btn{
+	margin-top: 0.3%;
+    margin-right:-1%;
 }
 
 .container2{
@@ -659,7 +709,7 @@ header h2 a{
 	background-image: url("images/pickup.jpg");
 	background-color:green;
 	padding :8px;
-	color:white;
+	color:white; 
 	border: 5px solid black ;
 }
 
@@ -668,8 +718,12 @@ header h2 a{
 	opacity:0.8;
 	background-color:green;
 	padding :8px;
-	color:white;
+	color:black; 
 	border: 5px solid black ;
+}
+
+.deliver a{
+	color:black;
 }
 
 .product{
@@ -782,7 +836,8 @@ ul {
   box-sizing: border-box;
   width: 400px;
   height: 300px;
-  padding:10px;
+  cursor: pointer;
+  /*padding:10px;*/
 }
 
 .marimg {
@@ -873,6 +928,7 @@ ul {
 }
 
 #adm{
+	font-family: var(--content);
 	font-size:60px;
 }
 
@@ -887,15 +943,17 @@ ul {
 	padding:8px 100px;
 }
 
-#validate{
+#validate,#valacc{
 	display:none;
 }
 
-/*Work with us*/
 .worksteps{
 	font-size:30px;
 	color:#0b6623;
 	font-weight: bold;
+}
+#data{
+	background-color: lightgrey;
 }
 
 /*Pages on Login*/
@@ -1012,6 +1070,15 @@ a:visited :{
     display:none;
 }
 
+/*Company login Features*/
+#comp_cont{
+	display:none;
+}
+
+#prod_cont{
+	display:none;
+}
+
 /*Volunteer login oage features*/
 #vol1{
     right:80%;
@@ -1041,3 +1108,19 @@ a:visited :{
     display:none;
 }
 
+/*TetraMarket*/
+#bookQuant{
+	display:none;
+}
+
+#benchQuant{
+	display:none;
+}
+
+#roofQuant{
+	display:none;
+}
+
+.notif{
+	margin:30%;
+}

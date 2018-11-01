@@ -13,9 +13,8 @@
 </head>
 <body>
 
-  <!-- Main header, common on all pages, replace h1 by logo -->
   <?php require "head.php" ?>
-<body>
+ 
   <div id='section'>
 <div class="centeralign">
 <h1>TETRA-MARKET</h1>
@@ -26,23 +25,104 @@
 
 <div class="row">
   
+  <!-- <button onclick="sfunction()" class="btnbtn"> -->
+    <div class="marimg">
+      <button id="bookbtn" class="btnbtn">
+        <img src="images/books.jpg" alt="Books">
+      </button>
+        <h3>Books</h3>    
+    </div>
 
-  <div class="marimg"><a href="@">
-    <img src="images/books.jpg" alt="Books">
-    <h3>Books</h3></a>
+  <div class="marimg">
+    <button id="benchbtn" class="btnbtn">
+      <img src="images/benches.jpg" alt="Benches">
+    </button>
+    <h3>Benches</h3>
   </div>
-  <div class="marimg"><a href="@">
-    <img src="images/benches.jpg" alt="Benches">
-    <h3>Benches</h3></a>
+
+  <div class="marimg">
+    <button id="roofbtn" class="btnbtn">
+      <img src="images/roofs.jpg" alt="Roof">
+    </button>
+    <h3>Roofs</h3>
   </div>
-  <div class="marimg"><a href="@">
-    <img src="images/roofs.jpg" alt="Roof">
-    <h3>Roofs</h3></a>
-  </div>
+
 </div>
 </div>
+
+<div class="container1" id="bookQuant">
+    <div class="register">
+      <span class="close" id="close_btn18">&times;</span>
+      <h2>Availability</h2>
+      <?php
+        require_once "cred.php";
+
+        $query = "select sum(prod_quantity) as prod_sum from product where prod_type='books'";
+        $result=mysqli_query($conn, $query);
+        if(mysqli_num_rows($result)>0){
+          while($row = mysqli_fetch_assoc($result)){
+            echo "<p>".$row['prod_sum']." books in stock!</p>";
+          }
+        }
+        else{
+          echo "Sorry, The product you requested for is Unavailable!";
+        }
+
+      ?>
+
+    </div>
+  </div>
+
+  <div class="container1" id="benchQuant">
+    <div class="register">
+      <span class="close" id="close_btn19">&times;</span>
+      <h2>Availability</h2>
+      <?php
+        require_once "cred.php";
+
+        $query = "select sum(prod_quantity) as prod_sum from product where prod_type='benches'";
+        $result=mysqli_query($conn, $query);
+        if(mysqli_num_rows($result)>0){
+          while($row = mysqli_fetch_assoc($result)){
+            echo "<p>".$row['prod_sum']." benches in stock!</p>";
+          }
+        }
+        else{
+          echo "Sorry, The product you requested for is Unavailable!";
+        }
+
+      ?>
+
+    </div>
+  </div>
+
+  <div class="container1" id="roofQuant">
+    <div class="register">
+      <span class="close" id="close_btn20">&times;</span>
+      <h2>Availability</h2>
+      <?php
+        require_once "cred.php";
+
+        $query = "select sum(prod_quantity) as prod_sum from product where prod_type='roofs'";
+        $result=mysqli_query($conn, $query);
+        if(mysqli_num_rows($result)>0){
+          while($row = mysqli_fetch_assoc($result)){
+            echo "<p>".$row['prod_sum']." roofs in stock!</p>";
+          }
+        }
+        else{
+          echo "Sorry, The product you requested for is Unavailable!";
+        }
+
+      ?>
+
+    </div>
+  </div>
+
   <?php require "foot.php" ?>
   
 <script src="scripts/script.js" type="text/javascript"></script>
+<script src="scripts/market.js" type="text/javascript"></script>
+
 </body>
 </html>
