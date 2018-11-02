@@ -40,7 +40,7 @@
 						}
 						else if($row['role']=='ngo'){
 							echo "Logged in!";
-							header("Location: ../IP/ngo.php");
+							header("Location: ../IP/market.php");
 						}
 						else if($row['role']=='company'){
 							echo("Logged in!");

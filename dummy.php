@@ -38,17 +38,10 @@
 
 	<?php
 		include "cred.php";
-		$query= "select * from carton where pick_status=1 and don_id='{$_SESSION['uid']}'";
-		$result=mysqli_query($conn, $query);
-		if(mysqli_num_rows($result)>0)
-		{
-			while($row = mysqli_fetch_assoc($result)){
-				echo "Your pickup of ". $row['quantity']." cartons has been scheduled!";
-			}
+		if($_SESSION['role'] == "donor"){
+			
 		}
-		else{
-			echo "No new notifications!";
-		}
+		
 	?>
 
 	<?php require "head.php" ?>
@@ -59,7 +52,6 @@
 		$query= "select * from delivery where del_status=1 and dcomp_id='{$_SESSION['uid']}'";
 		$result=mysqli_query($conn, $query);
 		$count = mysqli_num_rows($result);
-		echo($count);
 		if(mysqli_num_rows($result)>0)
 		{
 			while($row = mysqli_fetch_assoc($result)){
