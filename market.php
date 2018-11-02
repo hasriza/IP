@@ -69,7 +69,9 @@
         }
 
         if(isset($_SESSION['uid'])){
-            echo "<button onclick='ordBooks();'>Order Books</button>";
+            if($_SESSION['role']=="ngo"){
+              echo "<button onclick='ordBooks();'>Order Books</button>";
+            }            
         }
 
       ?>
@@ -99,7 +101,9 @@
         }
 
         if(isset($_SESSION['uid'])){
-            echo "<button onclick='ordBenches();'>Order Benches</button>";
+            if($_SESSION['role']=="ngo"){
+              echo "<button onclick='ordBenches();'>Order Benches</button>";
+            }
         }
 
       ?>
@@ -129,7 +133,9 @@
         }
 
          if(isset($_SESSION['uid'])){
-            echo "<button onclick='ordRoofs();'>Order Roofs</button>";
+            if($_SESSION['role']=="ngo"){
+              echo "<button onclick='ordRoofs();'>Order Roofs</button>";
+            }
         }
 
       ?>
