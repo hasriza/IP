@@ -1,7 +1,7 @@
 <?php
 	/*Connect to server*/
-	$user = 'root';
-	$pass = 'admin'; 
+	$user = 'user';
+	$pass = 'tetrapass'; 
 	$host= 'localhost';
 	$db = 'tetrafree';
  	

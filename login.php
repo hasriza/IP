@@ -27,26 +27,20 @@
 						session_start();
 						$_SESSION['uid'] = $row['id'];
 						$_SESSION['uname'] = $row['name'];
+						$_SESSION['role']=$row['role'];
+						$_SESSION['user']=$row['username'];
 
 						if($row['role']=='donor'){
 							echo "Logged in!";
-							header("Location: donor.php");
+							header("Location: ../IP/index.php");
 						}
 						else if($row['role']=='volunteer'){
 							echo "Logged in!";
-<<<<<<< HEAD
 							header("Location: ../IP/volunteerlogin.php");
-=======
-							header("Location: volunteer.php");
->>>>>>> 62155b1f4fa3f1ca995ef368cbb7f26a0ce5d408
 						}
 						else if($row['role']=='ngo'){
 							echo "Logged in!";
-							header("Location: ngo.php");
-						}
-						else if($row['role']=='admin'){
-							echo "Logged in!";
-							header("Location: admin.php");
+							header("Location: ../IP/ngo.php");
 						}
 						else if($row['role']=='company'){
 							echo("Logged in!");
@@ -55,6 +49,10 @@
 						else if($row['role']=='delivery'){
 							echo("Logged in!");
 							header("Location: ../IP/worker.php");
+						}
+						else if($row['role']=='admin'){
+							echo("Logged in!");
+							header("Location: ../IP/admin.php");
 						}
 				}
 				else{

@@ -40,7 +40,7 @@
 
 				<h1>Request Pickup</h1>
 				<div>
-					<input type="text" placeholder="Username or Email" name="pname">
+					<input type="text" placeholder="Username or Email" name="pname" value=<?php echo $_SESSION['uname']?>><?php echo $_SESSION['uname']?>
 				</div>
 
 				<div>
@@ -59,7 +59,7 @@
 			</form>
 		</div>
 	</div>
-		
+		</div>
 	<!-- <div class="container1" id="donlogs">
 		<div class="register">
 			<span class="close" id="close_btn1">&times;</span>
@@ -100,7 +100,8 @@
 		<a  href="doncollection.php"><button class="userbttn" id="dbt2">Collection Centers</button></a>
 		<!-- <button class="userbttn" id="dbt3">Logs</button> -->
 	</section>
-
+	<?php require "foot.php" ?>
+	<script src="scripts/script.js" type="text/javascript"></script>
 	<script type="text/javascript" src="scripts/donor.js"></script>
 </body>
 </html>

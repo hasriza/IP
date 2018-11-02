@@ -134,7 +134,8 @@
 		<!-- <a href="joincamp.php"><button class="userbttn" id="vol1">Join A Campaign</button></a> -->
 		<button class="userbttn" id="vol2">Start A Campaign</button>
 	</section>
-
+<?php require "foot.php" ?>
+	<script src="scripts/script.js" type="text/javascript"></script>
 	<script type="text/javascript" src="scripts/volunteer.js"></script>
 </body>
 </html>

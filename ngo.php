@@ -45,7 +45,7 @@
 				</header>
 				
 				<div>
-					<input type="text" placeholder="Username" name="oname" size="35">
+					<input type="text" placeholder=<?php echo $_SESSION['user']?> name="oname"  size="35" value=<?php echo $_SESSION['user']?>>
 				</div>
 
 				<div>
@@ -70,7 +70,8 @@
 	<section>	
 		<button class="userbttn" id="ngobt">Request For Products</button>
 	</section>
-
+<?php require "foot.php" ?>
+	<script src="scripts/script.js" type="text/javascript"></script>
 	<script type="text/javascript" src="scripts/ngo.js"></script>
 </body>
 </html>

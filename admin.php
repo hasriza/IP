@@ -13,10 +13,6 @@
 </head>
 <body>
 <?php require "head.php" ?>
-<<<<<<< HEAD
-=======
-	
->>>>>>> 62155b1f4fa3f1ca995ef368cbb7f26a0ce5d408
 	<section id="section">
 	<h1 id='adm'>Admin</h1>
 	<div id="push">
@@ -29,33 +25,13 @@
 	<option value='delivery'>Delivery</option>
 	<option value='volunteer'>Volunteer</option>
 	</select>
-<<<<<<< HEAD
 </div>
-<div class="user_det">
+</section>
 
-	<table cellspacing="2" border="1">
-		<tr>
-			<th>UID</th>
-			<th>Username</th>
-			<th id='validate'>Validate</th>
-			<th id='valacc'>Accept</th>
-			<th>Remove</th>
-		</tr>
-		<div id="data">			
-		</div>
-	</table>
-</div>
-			</section>
-	<?php require "foot.php" ?>
-=======
-	
-			</section>
 </div>
 <div id="data">			
 </div>
 	<?php require "foot.php" ?> 
-			
->>>>>>> 62155b1f4fa3f1ca995ef368cbb7f26a0ce5d408
 
 <script src="scripts/script.js" type="text/javascript"></script>
 <script src='scripts/admin.js' type="text/javascript"></script>

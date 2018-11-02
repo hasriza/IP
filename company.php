@@ -19,7 +19,7 @@
 		<?php
 			if(isset($_SESSION['uid'])){
 				// Edit here to get the profile box
-				echo "<section class='logBlock'>Hello ,<br>".$_SESSION['uname']."</section>";
+				// echo "<section class='logBlock'>Hello ,<br>".$_SESSION['uname']."</section>";
 				echo "<form action='logout.php'>
 				<button type='submit' name='logoutbttn' id='logout_btn' class='login'>Logout</button>
 				</form>";
@@ -66,8 +66,40 @@
 		</div>
 	</div>
 
+	<div class="container1" id="prod_cont">
+		<div class="register">
+			<form action="productdb.php" method="POST">
+				<span class="close" id="close_btn90">&times;</span>
+				<header>
+					<h2>Update Products</h2>
+				</header>
+				
+				<div>
+					<input type="text" placeholder="Username" name="prname" size="35">
+				</div>
+
+				<div>
+					<label>Type</label>
+					<input type="radio" name="prtype" value="books">Books</input>
+					<input type="radio" name="prtype" value="benches">Benches</input>
+					<input type="radio" name="prtype" value="roofs">Roofs</input>
+				</div>
+
+				<div>
+					<input placeholder="Quantity" type="text" name="prquant" size="35">
+				</div>
+
+				<div>
+					<input type="submit" name="prbtn" class="sub">
+				</div>
+
+			</form>
+		</div>
+	</div>
+
 	<section>	
 		<button class="userbttn" id="compbt">Request For Cartons</button>
+		<button class="userbttn" id="prodbt">Update Products</button>
 	</section>
 
 	<script type="text/javascript" src="scripts/company.js"></script>
