@@ -9,9 +9,8 @@
 				<img src="images/Options.gif" width='35px' height="35px" id='img1'>
 		</div>
 
-		<a class="notif" href="#">
-			Notification <span class="notifnumb">5</span>
-		</a>	
+		
+		
 
 		<nav id="mainnav">	
 
@@ -34,13 +33,26 @@
 				<li><a href="#contact">Contact Details</a></li>
 			</ul>
 		</nav>
+		<div class="notif">
+				<a href=''><img src="images/notif.png" width=45 height=45></img><span class="notifnumb"></span></a>
+				<div class='notifdrop'>	
+					<div class="not_drop">
+						<ul>
+							<li><a href="">blah1</a></li>
+							<li><a href="">Work With Us</a></li>
+							<li><a href="">Volunteer</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		<div id="f_cont" class="container1">
 		<div class="register">
 			<span class="close" id="close_btn">&times;</span>
 			<header>
+
 				<h2><a href="login.html">Login</a></h2>
 			</header>
-			
+
 			<form action="register.php" method="POST" onsubmit="return validation();">
 
 				<fieldset>

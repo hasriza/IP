@@ -11,33 +11,27 @@
 	<meta name="description" content="Recycling TetraPack cartons into finished products">
 	<meta name="keywords" content="Recycle, TetraPack, TetraPack Benches">
 	<style type="text/css">  
-        body {  
-            margin: 0;  
-            background: #e6e6e6;  
-        }  
         .showSlide {  
-            display: none  
+            display: none ;
         }  
             .showSlide img { 
-
-        	margin-top:7.5%; 
-                width: 100%;  
+                margin-left: 2%;
+        	   margin-top:5%; 
+                width: 90%;  
             }  
         .slidercontainer {  
-            max-width: 1000px;  
-            position: relative;  
+            max-width: 100%;  
             margin: auto;  
         }  
         .left, .right {  
             cursor: pointer;  
             position: absolute;  
-            top: 60%;  
+            top: 55%;  
             width: auto;  
             padding: 16px;  
             margin-top: -22px;  
             color: white;  
             font-weight: bold;  
-            font-size: 18px;  
             transition: 0.6s ease;  
             border-radius: 0 3px 3px 0;  
         }  
@@ -50,14 +44,16 @@
                 position: absolute;  
             }  
         .content {  
-            color: #eff5d4;  
+            color: gray;
+            font-weight: bold;  
             font-size: 30px;  
             padding: 8px 0px;  
             position: absolute;  
-            top:    50px;  
-            width: 100%;  
+            margin-left: 35%;
+            top: 20.5%;  
+            width: 35%;  
             text-align: center;
-            background-color: rgba(115, 115, 115, 0.8);   
+            border-bottom: 2px solid green;  
         }  
         .active {  
             background-color: #717171;  
@@ -95,15 +91,15 @@
 <body>
 	<!-- Main header, common on all pages, replace h1 by logo -->
 	<?php require "head.php" ?>
-    
+
 	<div class="slidercontainer">  
         <div class="showSlide fade">  
             <img src="images/j1.png" width="25px" height="500px" />  
-            <div class="content">Get The cartons-flip flat flat</div>  
+            <div class="content">Recyle the Cartons - Squish and Squash</div>  
         </div>  
         <div class="showSlide fade">  
             <img src="images/j2.jpg" width="25px" height="500px" />  
-            <div class="content">Recyle the catons-squish and squash</div>  
+            <div class="content">Get The Cartons - Flip Flap Flat</div>  
         </div>  
   
         <div class="showSlide fade">  
@@ -116,9 +112,12 @@
 		
 
         <!-- Navigation arrows -->  
-        <a class="left" onclick="nextSlide(-1)"><img src  ="images/p1.jpg" width="25px"></a>  
-        <a class="right" onclick="nextSlide(1)"><img src  ="images/p2.jpg" width="25px"></a>  
+        <a class="left" onclick="nextSlide(-1)"><img src  ="images/p1.jpg" width="50px" height="50px"></a>
+        <a class="right" onclick="nextSlide(1)"><img src  ="images/p2.jpg" width="50px" height="50px"></a>
     </div> 
+    <div class="about">
+        <h1>About Us</h1>
+    </div>
     <div id="section">
 		<section>
 			<div class='c1'>

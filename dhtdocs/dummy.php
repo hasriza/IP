@@ -36,40 +36,39 @@
 	<?php require "head.php" ?>
 	<div id='section'>	
 
-	<div class="container1" id="ngo_cont">
-		<div class="register">
-			<form action="ngodb.php" method="POST">
-				<span class="close" id="close_btn">&times;</span>
-				<header>
-					<h2>Place an Order</h2>
-				</header>
-				
-				<div>
-					<input type="text" placeholder=<?php echo $_SESSION['user']?> name="oname"  size="35" value=<?php echo $_SESSION['user']?>>
-				</div>
+	<?php
+		include "cred.php";
+		$query= "select * from carton where pick_status=1 and don_id='{$_SESSION['uid']}'";
+		$result=mysqli_query($conn, $query);
+		if(mysqli_num_rows($result)>0)
+		{
+			while($row = mysqli_fetch_assoc($result)){
+				echo $row['c_id']." 	". $row['quantity']." 	". $row['type'];
+			}
+		}
+		else{
+			echo "NO notifs!";
+		}
+	?>
 
-				<div>
-					<label>	Product Required</label>
-					<input type="radio" name="ord_product" value="roof">Roofs</input>
-					<input type="radio" name="ord_product" value="bench">Benches</input>
-					<input type="radio" name="ord_product" value="book">Books</input>
-				</div>
+	<?php require "head.php" ?>
+	<div id='section'>	
 
-				<div>
-					<input placeholder="Quantity" type="text" name="oquant" size="35">
-				</div>
+	<?php
+		include "cred.php";
+		$query= "select * from delivery where del_status=1 and dcomp_id='{$_SESSION['uid']}'";
+		$result=mysqli_query($conn, $query);
+		if(mysqli_num_rows($result)>0)
+		{
+			while($row = mysqli_fetch_assoc($result)){
+				echo $row['c_id']." 	". $row['quantity']." 	". $row['type'];
+			}
+		}
+		else{
+			echo "NO notifs!";
+		}
+	?>
 
-				<div>
-					<input type="submit" name="ngobtn" class="sub">
-				</div>
-
-			</form>
-		</div>
-	</div>
-
-	<section>	
-		<button class="userbttn" id="ngobt">Request For Products</button>
-	</section>
 <?php require "foot.php" ?>
 	<script src="scripts/script.js" type="text/javascript"></script>
 	<script type="text/javascript" src="scripts/ngo.js"></script>

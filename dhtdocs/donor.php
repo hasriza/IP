@@ -40,7 +40,7 @@
 
 				<h1>Request Pickup</h1>
 				<div>
-					<input type="text" placeholder="Username or Email" name="pname">
+					<input type="text" placeholder="Username or Email" name="pname" value=<?php echo $_SESSION['uname']?>><?php echo $_SESSION['uname']?>
 				</div>
 
 				<div>

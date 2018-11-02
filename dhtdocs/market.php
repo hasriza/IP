@@ -69,7 +69,7 @@
         }
 
       ?>
-
+      <button>Place Order</button>
     </div>
   </div>
 
