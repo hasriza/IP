@@ -557,6 +557,36 @@ header h2 a{
     cursor: pointer;
 }
 
+.close_btn{
+	background-color: lightgrey;
+    color:grey;
+    font-size:40px;
+    font-weight: bold;
+}
+
+.close_btn:hover , .close_btn:focus{
+    color:red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tick_btn{
+	background-color: lightgrey;
+    color:grey;
+    font-size:40px;
+    font-weight: bold;
+}
+
+.tick_btn:hover , .tick_btn:focus{
+    color:green;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hide{
+	display:none;
+}
+
 /*Background Window when modal pops up*/
 .container1{
     display:none;
@@ -923,17 +953,19 @@ ul {
 	font-size:60px;
 }
 
-.user_det{
+#user_det{
 	background-color: white;
 	display: none;
-	padding:20px;
+	padding-left: 200px;
+	padding-bottom: 100px;
 }
 
-.user_det th{
+#user_det th{
 	background-color: darkgrey;
 	padding:8px 100px;
 }
 
+<<<<<<< HEAD
 #validate,#valacc{
 	display:none;
 }
@@ -946,6 +978,10 @@ ul {
 	font-weight: bold;
 =======
 #data{
+=======
+#user_det tr{
+	text-align: center;
+>>>>>>> 62155b1f4fa3f1ca995ef368cbb7f26a0ce5d408
 	background-color: lightgrey;
 >>>>>>> ad66de8b98cee2ce8c6c81d5a0accd33845045e5
 }

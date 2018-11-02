@@ -30,15 +30,23 @@
 
 						if($row['role']=='donor'){
 							echo "Logged in!";
-							header("Location: ../IP/donor.php");
+							header("Location: donor.php");
 						}
 						else if($row['role']=='volunteer'){
 							echo "Logged in!";
+<<<<<<< HEAD
 							header("Location: ../IP/volunteerlogin.php");
+=======
+							header("Location: volunteer.php");
+>>>>>>> 62155b1f4fa3f1ca995ef368cbb7f26a0ce5d408
 						}
 						else if($row['role']=='ngo'){
 							echo "Logged in!";
-							header("Location: ../IP/ngo.php");
+							header("Location: ngo.php");
+						}
+						else if($row['role']=='admin'){
+							echo "Logged in!";
+							header("Location: admin.php");
 						}
 						else if($row['role']=='company'){
 							echo("Logged in!");
