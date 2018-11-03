@@ -85,7 +85,11 @@
 			<span class="close" id="close_btn">&times;</span>
 			<header>
 
+<<<<<<< HEAD
 				<button class='login' id='login_btn'>Login</button>
+=======
+				<h2 id="loginTog"><a href="#">Login</a></h2>
+>>>>>>> 5b00d6b04a0c233d88795327a734f4c1abc98c2d
 			</header>
 
 			<form action="register.php" method="POST" onsubmit="return validation();">

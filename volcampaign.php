@@ -1,4 +1,4 @@
-<?php
+o<?php
 	require_once "cred.php";
 
 	if(isset($_POST['startcamp'])){

@@ -5,6 +5,12 @@ var close=document.getElementById("close_btn");
 var register=document.getElementById("register_btn");
 //Get container of form 
 var container=document.getElementById("f_cont");
+<<<<<<< HEAD
+=======
+var container1=document.getElementById("l_cont");
+var container=document.getElementById("l_cont");
+
+>>>>>>> 5b00d6b04a0c233d88795327a734f4c1abc98c2d
 //Listen for click on register, page opens
 register.addEventListener('click', open_page);
 

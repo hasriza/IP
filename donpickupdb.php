@@ -3,7 +3,7 @@
 
 		require_once "cred.php";
 
-		$pname=mysqli_escape_string($conn, $_POST["pname"]);
+		$pname=$_SESSION['user'];
 		$quant=mysqli_escape_string($conn, $_POST["quant"]);
 		$pick_type=mysqli_escape_string($conn, $_POST["pick_type"]);
 

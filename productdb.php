@@ -2,7 +2,7 @@
 	require_once "cred.php";
 
 	if(isset($_POST['prbtn'])){
-		$prname=mysqli_escape_string($conn, $_POST['prname']);
+		$prname=$_SESSION['user'];
 		$prtype=mysqli_escape_string($conn, $_POST['prtype']);
 		$prquant=mysqli_escape_string($conn, $_POST['prquant']);
 
