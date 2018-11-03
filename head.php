@@ -79,7 +79,6 @@
 		}
 		?>
 		
-		
 		<div class="container1" id="reqpick">
 		<div class="register">
 			<form action="donpickupdb.php" method="POST">
@@ -113,6 +112,7 @@
 			<header>
 
 				<button class='login' id='login_btn'>Login</button>
+				<h2 id="loginTog"><a href="#">Login</a></h2>
 			</header>
 
 			<form action="register.php" method="POST" onsubmit="return validation();">

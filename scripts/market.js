@@ -1,3 +1,4 @@
+/*DISPLAYING MODALS*/
 /*Book Availability Modal*/
 var bookbtn = document.getElementById("bookbtn");
 var bookQuant=document.getElementById("bookQuant");
@@ -66,3 +67,46 @@ function outside3(e){
 		roofQuant.style.display = "none";
 	}
 }
+
+/*DISPLAYING FORMS*/
+/*Books order*/
+function ordBooks(){
+        var data = ["<form method='POST' action='marketdb.php' >",
+        			"<div>", 
+        				"<input type='text' placeholder='Quantity Required' name='or_quant' autofocus='on' size=35 >",
+        			"</div>",
+        			 "<div>",
+					    "<input type='submit' name='bookbtn' class='sub'>",
+					  "</div>",
+					  "</form>"
+        			].join(' ');
+		document.getElementById("bookForm").innerHTML= data;					
+};
+
+/*Benches Order*/
+function ordBenches(){
+        var data = ["<form method='POST' action='marketdb.php' >",
+        			"<div>", 
+        				"<input type='text' placeholder='Quantity Required' name='or_quant' autofocus='on' size=35 >",
+        			"</div>",
+        			 "<div>",
+					    "<input type='submit' name='benchbtn' class='sub'>",
+					  "</div>",
+					  "</form>"
+        			].join(' ');
+		document.getElementById("benchForm").innerHTML= data;					
+};
+
+/*Roofs Order*/
+function ordRoofs(){
+        var data = ["<form method='POST' action='marketdb.php' >",
+        			"<div>", 
+        				"<input type='text' placeholder='Quantity Required' name='or_quant' autofocus='on' size=35 >",
+        			"</div>",
+        			 "<div>",
+					    "<input type='submit' name='roofbtn' class='sub'>",
+					  "</div>",
+					  "</form>"
+        			].join(' ');
+		document.getElementById("roofForm").innerHTML= data;					
+};

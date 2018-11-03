@@ -15,42 +15,42 @@
 
   <?php require "head.php" ?>
  
-  <div id='section'>
-<div class="centeralign">
-<h1>TETRA-MARKET</h1>
-<h2>Endorse The Change!!!</h2>
-<p>The place to buy products</p><hr>
-</div>
-<div>  </div>
+    <div id='section'>
+      <div class="centeralign">
+      <h1>TETRA-MARKET</h1>
+      <h2>Endorse The Change</h2>
+    </div>
+    <div>  </div>
 
-<div class="row">
-  
-  <!-- <button onclick="sfunction()" class="btnbtn"> -->
-    <div class="marimg">
-      <button id="bookbtn" class="btnbtn">
-        <img src="images/books.jpg" alt="Books">
-      </button>
-        <h3>Books</h3>    
+    <div class="row">
+      
+      <!-- <button onclick="sfunction()" class="btnbtn"> -->
+        <div class="marimg">
+          <button id="bookbtn" class="btnbtn">
+            <img src="images/books.jpg" alt="Books">
+          </button>
+            <h3>Books</h3>    
+        </div>
+
+      <div class="marimg">
+        <button id="benchbtn" class="btnbtn">
+          <img src="images/benches.jpg" alt="Benches">
+        </button>
+        <h3>Benches</h3>
+      </div>
+
+      <div class="marimg">
+        <button id="roofbtn" class="btnbtn">
+          <img src="images/roofs.jpg" alt="Roof">
+        </button>
+        <h3>Roofs</h3>
+      </div>
+
+      </div>
     </div>
 
-  <div class="marimg">
-    <button id="benchbtn" class="btnbtn">
-      <img src="images/benches.jpg" alt="Benches">
-    </button>
-    <h3>Benches</h3>
-  </div>
-
-  <div class="marimg">
-    <button id="roofbtn" class="btnbtn">
-      <img src="images/roofs.jpg" alt="Roof">
-    </button>
-    <h3>Roofs</h3>
-  </div>
-
-</div>
-</div>
-
-<div class="container1" id="bookQuant">
+  <!-- Books Modal -->
+  <div class="container1" id="bookQuant">
     <div class="register">
       <span class="close" id="close_btn18">&times;</span>
       <h2>Availability</h2>
@@ -68,11 +68,20 @@
           echo "Sorry, The product you requested for is Unavailable!";
         }
 
+        if(isset($_SESSION['uid'])){
+            if($_SESSION['role']=="ngo"){
+              echo "<button onclick='ordBooks();'>Order Books</button>";
+            }            
+        }
+
       ?>
-      <button>Place Order</button>
+
+      <div id="bookForm"></div>
+      
     </div>
   </div>
 
+  <!-- Benches Modal -->
   <div class="container1" id="benchQuant">
     <div class="register">
       <span class="close" id="close_btn19">&times;</span>
@@ -91,11 +100,20 @@
           echo "Sorry, The product you requested for is Unavailable!";
         }
 
+        if(isset($_SESSION['uid'])){
+            if($_SESSION['role']=="ngo"){
+              echo "<button onclick='ordBenches();'>Order Benches</button>";
+            }
+        }
+
       ?>
+
+      <div id="benchForm"></div>
 
     </div>
   </div>
 
+  <!-- Roofs Modal -->
   <div class="container1" id="roofQuant">
     <div class="register">
       <span class="close" id="close_btn20">&times;</span>
@@ -114,7 +132,15 @@
           echo "Sorry, The product you requested for is Unavailable!";
         }
 
+         if(isset($_SESSION['uid'])){
+            if($_SESSION['role']=="ngo"){
+              echo "<button onclick='ordRoofs();'>Order Roofs</button>";
+            }
+        }
+
       ?>
+
+      <div id="roofForm"></div>
 
     </div>
   </div>
@@ -126,3 +152,4 @@
 
 </body>
 </html>
+
