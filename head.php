@@ -23,40 +23,75 @@
 					<div id ="dropdown">	
 						<div class="drop">
 							<ul>
-								<li class='list'><a href="donate.php"  id='1'>Donate</a></li>
-								<li class='list'><a href="work_with_us.php"  id="2">Work With Us</a></li>
-								<li class='list'><a href="volunteer.php"  id="3">Volunteer</a></li>
+								<li><a href="donate.php"  id='1'>Donate</a></li>
+								<li><a href="work_with_us.php"  id="2">Work With Us</a></li>
+								<li><a href="volunteer.php"  id="3">Volunteer</a></li>
 							</ul>
 						</div>
 					</div>
 				<li><a href="market.php">Tetra-Market</a></li>
 				<li><a href="#contact">Contact Details</a></li>
+				<?php
+					if(isset($_SESSION['uid'])){
+						echo "<li><a href=''>Tasks</a></li><div id='taskdrop1'><div id='taskdrop2'><ul>";
+						if($_SESSION['role']=='donor'){
+							echo "<li><button class='userbttn' id='dbt1'>Request Pickups</button></li>	
+							<li><a  href='doncollection.php'><button class='userbttn' id='dbt2'>Collection Centers</button></a><li>";			
+						}
+						if($_SESSION['role']=='delivery'){
+							echo "<li>Carton Pickups</li> <li>Product Pickups</li>
+							<li><a  href='doncollection.php'><button class='userbttn' id='dbt2'>Collection Centers</button></a><li>";
+						}
+						if($_SESSION['role']=='volunteer'){
+							echo "<li>Conduct Campaign</li>
+							<li>Join Campaign</li>";
+						}
+						if($_SESSION['role']=='company'){
+							echo "<li>Request Cartons</li>
+							<li>Deliver Products</li>";
+						}
+						if($_SESSION['role']=='admin'){
+							echo "<li>Manage Users</li>";
+						}
+						echo "</ul></div></div>";
+					}
+				?>
 			</ul>
 		</nav>
-		<div class="notif">
-				<a href=''><img src="images/notif.png" width=45 height=45></img><span class="notifnumb"></span></a>
-				<div class='notifdrop'>	
-					<div class="not_drop">
-						<ul>
-							<li><a href="">blah1</a></li>
-							<li><a href="">Work With Us</a></li>
-							<li><a href="">Volunteer</a></li>
-						</ul>
-					</div>
+		<?php
+		if(isset($_SESSION['uid'])){
+			if($_SESSION['role']=='donor' or $_SESSION['role']=='delivery'  or $_SESSION['role']=='company'  or $_SESSION['role']=='ngo')
+			{
+			// Edit here to get the profile box
+			echo "<div class='notif'>
+				<a href=''><img src='images/notif.png' width=45 height=45></img></a>
 				</div>
-			</div>
+				<div class='notifdrop'>	
+					<div class='not_drop'>
+						<ul>
+							<li><a href=''>blah1</a></li>
+							<li><a href=''>Work With Us</a></li>
+							<li><a href=''>Volunteer</a></li>
+						</ul>
+				</div>
+			</div>";
+		}
+		}
+		?>
+		
+
 		<div id="f_cont" class="container1">
 		<div class="register">
 			<span class="close" id="close_btn">&times;</span>
 			<header>
 
-				<h2><a href="login.html">Login</a></h2>
+				<button class='login' id='login_btn'>Login</button>
 			</header>
 
 			<form action="register.php" method="POST" onsubmit="return validation();">
 
 				<fieldset>
-				<legend>OR</legend>
+				<legend>Register Form</legend>
 					
 					<div>
 						<input type="text" placeholder="Full Name" name="fname" autofocus="on" autocomplete="on" size=35 >
@@ -125,10 +160,11 @@
 					</div>
 
 					<div id="check">
-						<input type="checkbox" value="check" class="checkbox1" required
+						<input type="checkbox" value="check" class="checkbox1" required>I agree to the Terms and Conditions and Privacy Policy.
+					</input>
 
-						>I agree to the Terms and Conditions and Privacy Policy.</input>
 					</div>
+
 
 				</fieldset>
 
@@ -140,13 +176,13 @@
 			<div class="register" id="adjust_login">
 				<span class="close" id="close_btn1">&times;</span>
 				<header>
-					<h2><a href="register.html">Register</a></h2>
+					<button class='login' id='register_btn'>Register</button>
 				</header>
 				
 				<form action="login.php", method="POST" class="forms">
 
 					<fieldset>
-						<legend>OR</legend>
+						<legend>Login</legend>
 
 							<div>
 							    <input type="text" placeholder="Username or Email" name="lname" required>
