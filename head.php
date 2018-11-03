@@ -50,7 +50,7 @@
 			<span class="close" id="close_btn">&times;</span>
 			<header>
 
-				<h2><a href="login.html">Login</a></h2>
+				<h2 id="loginTog"><a href="#">Login</a></h2>
 			</header>
 
 			<form action="register.php" method="POST" onsubmit="return validation();">

@@ -45,10 +45,6 @@
 				</header>
 				
 				<div>
-					<input type="text" placeholder="Username" name="dname" size="35">
-				</div>
-
-				<div>
 					<label>Type</label>
 					<input type="radio" name="dtype" value="50d">50% Recyclable</input>
 					<input type="radio" name="dtype" value="100d">100% Recyclable</input>

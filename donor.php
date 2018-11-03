@@ -39,10 +39,7 @@
 				<span class="close" id="close_btn2">&times;</span>
 
 				<h1>Request Pickup</h1>
-				<div>
-					<input type="text" placeholder="Username or Email" name="pname" value=<?php echo $_SESSION['uname']?>><?php echo $_SESSION['uname']?>
-				</div>
-
+				
 				<div>
 					<input type="text" placeholder="Quantity To Be Collected" name="quant">
 				</div>

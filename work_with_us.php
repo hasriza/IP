@@ -35,14 +35,14 @@
 		<section class="content">
 			<h2>Help Us Collect</h2>
 			<p>Join in as a delivery personnel and help us make it easier for the cartons to reach us!</p>
-			<a href="register.html">Join As Delivery Personnel</a>
+			<a href="#">Join As Delivery Personnel - Click on the register button</a>
 		</section>
 
 		<section class="content">
 			<h2>Help Us Recycle</h2>			
 			<img src="images/recycleproc.jpg">
 			<p>Collecting cartons is just the beginning, but transforming it into useful products -  THAT'S THE GOAL!</p>
-			<a href="register.html">Recycle The Cartons</a>
+			<a href="#">Recycle The Cartons - Click on the register button</a>
 		</section>
 	</section>
 
