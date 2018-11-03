@@ -41,7 +41,11 @@
 						else if($row['role']=='ngo'){
 							echo "Logged in!";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 							header("Location: ../IP/market.php");
+=======
+							header("Location: ngo.php");
+>>>>>>> Stashed changes
 =======
 							header("Location: ngo.php");
 >>>>>>> Stashed changes
