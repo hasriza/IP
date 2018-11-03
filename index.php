@@ -16,7 +16,7 @@
         }  
             .showSlide img { 
                 margin-left: 2%;
-        	   margin-top:5%; 
+        	   margin-top:9%; 
                 width: 90%;  
             }  
         .slidercontainer {  
@@ -46,12 +46,12 @@
         .content {  
             color: gray;
             font-weight: bold;  
-            font-size: 30px;  
+            font-size: 40px;  
             padding: 8px 0px;  
             position: absolute;  
-            margin-left: 35%;
-            top: 20.5%;  
-            width: 35%;  
+            margin-left: 30%;
+            top: 150px;  
+            width: 45%;  
             text-align: center;
             border-bottom: 2px solid green;  
         }  
@@ -139,7 +139,7 @@
 		</section>
 		<section>
 				<div class='c2'>
-				<h1>Recycle your</h1>
+				<h1>Recycle your Cartons</h1>
 				<p>
 				Every second, about 5,500 Tetra Pak cartons are consumed across the world. Imagine the number of desks, notebook and roofs all these cartons can be used to make. Most of us consume beverages from Tetra Pak cartons every day, but many of us don’t spare a thought about what happens to the cartons when we put them in a bin. Next time you have an empty carton in your hand, consider <span class="indexcon"> RECYCLING!</span>
 				</p>

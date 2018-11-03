@@ -5,7 +5,6 @@ var close=document.getElementById("close_btn");
 var register=document.getElementById("register_btn");
 //Get container of form 
 var container=document.getElementById("f_cont");
-
 //Listen for click on register, page opens
 register.addEventListener('click', open_page);
 

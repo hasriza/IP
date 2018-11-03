@@ -21,7 +21,7 @@
 				$dbpass = $row['password'];
 				$check = password_verify($pass, $dbpass);
 				if($check==false){
-					echo "<script type='text/javascript'>alert('Incorrect Password!');</script>";	
+					echo "<script type='text/javascript'>alert('Incorrect Password!');</script>";
 				}
 				else if($check==true){
 						session_start();
@@ -32,40 +32,42 @@
 
 						if($row['role']=='donor'){
 							echo "Logged in!";
-							header("Location: ../IP/index.php");
+							header("Location: index.php");
 						}
 						else if($row['role']=='volunteer'){
 							echo "Logged in!";
-							header("Location: ../IP/volunteerlogin.php");
+							header("Location: volunteerlogin.php");
 						}
 						else if($row['role']=='ngo'){
 							echo "Logged in!";
-							header("Location: ../IP/ngo.php");
+							header("Location: ngo.php");
 						}
 						else if($row['role']=='company'){
 							echo("Logged in!");
-							header("Location: ../IP/company.php");
+							header("Location: company.php");
 						}
 						else if($row['role']=='delivery'){
 							echo("Logged in!");
-							header("Location: ../IP/worker.php");
+							header("Location: worker.php");
 						}
 						else if($row['role']=='admin'){
 							echo("Logged in!");
-							header("Location: ../IP/admin.php");
+							header("Location: admin.php");
 						}
 				}
 				else{
+					header("Location: index.php");	
 					echo "<script type='text/javascript'>alert('Something went wrong!');</script>";	
 				}
 			}
 			else{
+				header("Location: index.php");	
 				echo "<script type='text/javascript'>alert('Invalid Username!');</script>";
 			}
 		}
 	}
 	else{
-		header("Location:../IP/index.php");
+		header("Location: index.php");
 		exit();
 	}
 

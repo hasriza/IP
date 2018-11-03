@@ -83,15 +83,16 @@
 			</form>
 		</div>
 	</div>
-<div id="section">
 	<!-- Contents of Our Story Page -->
-	<section id='story'>		 
 		<h2 class="hd">Our Story</h2>	
 		<p id='strp'>Cartons Le Aao, Classrooms Banao!</p>
 		<section class="storycontentm">
 			<p>This is an initiative that is designed beautifully to make sure that used Tetra Pak cartons are recycled into useful things for the society, especially for lesser privileged children. Not only can we help build a cleaner India, but a smarter India too.</p>
 			<p>What good is a campaign, but for the stories of it's campaigners. Here are some!</p>
 		</section>
+	<section id='story'>
+	<div></div>	
+<div id="section">
 		<section class="story1">
 			<img src="images/str1.jpg">
 			<p>
@@ -125,19 +126,6 @@
 				<div style="font-size:20px;">At first, I worked in my father’s company. But I didn’t know when or how I would begin making that ‘difference’ - It was only when I had my first daughter and she started to get sick, that I became more conscious of our environment. And I reached the peak of frustration when I visited my farm house in Gujarat -- the one place that used to be so clean and green was now completely covered in waste and pollution. There was no place left to escape to anymore. 
 				I had to start somewhere, so I started with recycling.</div>
 				<div style="font-size:20px;">I heard about Tetrapack cartons and that they could be recycled into classroom furniture, notebooks and even roofing sheets! All I had to do was save the cartons and return them for recycling. But I wanted to do more. That’s when I started working with TetraFree on their recycling projects. It’s been 8 years and we’ve collected tons of cartons from all over the city and recycled them into classroom desks and benches. My happiest moment was when we donated desks to a school where the kids have never known a classroom with actual desks before. Just the smiles and the excitement on their faces was worth it.”</div>		
-			</p>
-		</section>
-		
-		<section class="story5">
-			<img src="images/str5.jpg">
-			<p>
-				<div style="font-size:20px;">“I lost my father early on. I watched my mother take over the responsibility of the household and bring us up. She sold vegetables every day and worked night and day to educate us. She wanted us to make something of ourselves so we’d never have to struggle.</div>
-				<div style="font-size:20px;">I developed my work ethic because of her– I went from an account clerk, to working in mills. Even after I was married, I didn’t stop working– it’s all I knew and together, my husband and I built a life for our family.</div>
-				<div style="font-size:20px;">Unfortunately, the company my husband worked for shut down– he couldn’t find a job, and the responsibility of our three children fell on my shoulders. I began to work more while my husband took over the household. People started talking about us, but I was confident that we would figure something out.</div>
-				<div style="font-size:20px;">And soon enough, we set up a business of selling milk together. Because I had more time on my hands, so I started working with an NGO, my role was to give employment to waste-pickers. I worked out of their office, near a dumping ground– the smell was horrible.</div>
-				<div style="font-size:20px;">
-				Co-incidentally, in 2008, a TetraFree Manager came to our office and showed us a demo of how Tetra Pak cartons can be recycled and reused instead of being thrown away in these dumps. Something clicked in me- I wanted to do anything to help these waste-pickers, especially if it meant reducing the amount of waste, and helping them earn some extra money. So, I started going around, collecting these cartons and creating awareness. 
-				Since then, I’ve collected over 50 tonnes of Tetra Pak cartons and sent them for recycling.”</div>					
 			</p>
 		</section>
 	</section>
